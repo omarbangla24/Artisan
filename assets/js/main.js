@@ -278,6 +278,18 @@
         if (!el.getAttribute('data-done')) finalizeCount(el);
       });
     }, 4000);
+
+    /* requestAnimationFrame is frozen while a tab is in the background, so a
+       counter can be left stranded mid-count. Settle it the moment the tab is
+       looked at again rather than waiting on a throttled timer. */
+    doc.addEventListener('visibilitychange', function () {
+      if (doc.hidden) return;
+      Array.prototype.forEach.call(counters, function (el) {
+        if (el.getAttribute('data-counted') && !el.getAttribute('data-done')) {
+          finalizeCount(el);
+        }
+      });
+    });
   }
 
   /* ---------- Auto scroll-reveal ----------
