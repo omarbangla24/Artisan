@@ -777,6 +777,18 @@ strong,b{font-weight:600;color:var(--ink)}
   font:inherit;font-size:.96rem;color:var(--ink);transition:border-color .22s,box-shadow .22s;
 }
 .field textarea{min-height:120px;resize:vertical}
+/* Safari and Chrome keep drawing a <select> with native chrome — its own
+   arrow and internal metrics — until `appearance` is reset, which is why it
+   ignored the padding above and looked unlike the other fields. */
+.field select{
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  padding-right:46px;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2378858E' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 17px center;background-size:15px;
+}
+.field select:focus{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B61A9' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(25,97,169,.1)}
 .field input::placeholder,.field textarea::placeholder{color:#A9B4BF}
 .hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
@@ -789,6 +801,12 @@ strong,b{font-weight:600;color:var(--ink)}
 .tile-brand .field input::placeholder,.tile-brand .field textarea::placeholder{color:rgba(255,255,255,.6)}
 .tile-brand .field input:focus,.tile-brand .field select:focus,.tile-brand .field textarea:focus{border-color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.16)}
 .tile-brand .field select option{color:var(--ink)}
+/* the background shorthand above resets background-image, so re-apply the
+   chevron here in a light tone for the brand-coloured tile */
+.tile-brand .field select,.tile-brand .field select:focus{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 17px center;background-size:15px;
+}
 .tile-brand .form-note{color:rgba(255,255,255,.72)}
 .tile-brand .form-status{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff}
 .tile-brand .field .req{color:#fff}
