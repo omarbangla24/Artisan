@@ -1,0 +1,56 @@
+<!--
+title: Team Member Registration | ARTISAN Chartered Accountants
+description: Submit an account request to join the ARTISAN Chartered Accountants team member area. Admin approval is required before login access becomes active.
+-->
+
+<section class="masthead band">
+  <span class="band-sweep" aria-hidden="true"></span>
+  <span class="band-edge" aria-hidden="true"></span>
+  <div class="container">
+    <div class="tile tile-brand masthead-tile">
+      <div class="masthead-grid">
+        <div>
+          <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Team Member Registration</span></div>
+          <span class="chip chip-light">Team Access</span>
+          <h1 style="font-size:clamp(2rem,3.6vw,3rem)">Register as a <em>team member</em></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container auth" style="max-width:720px">
+    <div class="auth-card reveal">
+      <h2 style="font-size:1.5rem">Team Access</h2>
+      <p style="color:var(--muted);font-size:.94rem;margin-bottom:24px">Submit your account request. Admin approval is required before login access becomes active.</p>
+      <form data-form data-no-mail data-subject="Team member registration request" data-pending="The registration endpoint needs to be connected to your server. Please email your details to info@artisan-ca.com in the meantime." novalidate>
+        <div class="hp-field"><label for="r-site">Website</label><input type="text" id="r-site" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="form-grid">
+          <div class="field is-full"><label for="r-name">Full Name</label><input type="text" id="r-name" name="full_name" required></div>
+          <div class="field"><label for="r-email">Email</label><input type="email" id="r-email" name="email" required></div>
+          <div class="field"><label for="r-user">Username</label><input type="text" id="r-user" name="username" required></div>
+          <div class="field"><label for="r-pass">Password</label><input type="password" id="r-pass" name="password" required></div>
+          <div class="field">
+            <label for="r-designation">Designation</label>
+            <select id="r-designation" name="designation">
+              <option value="">Select Designation</option>
+              <option>Designation 1</option>
+              <option>Designation 2</option>
+              <option>Designation 3</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="field"><label for="r-custom">Custom Designation</label><input type="text" id="r-custom" name="custom_designation"></div>
+          <div class="field"><label for="r-dept">Department</label><input type="text" id="r-dept" name="department"></div>
+          <div class="field is-full"><label for="r-photo">Profile Picture</label><input type="file" id="r-photo" name="profile_picture" accept="image/*"></div>
+          <div class="field is-full"><label for="r-desc">Short Description</label><textarea id="r-desc" name="description" rows="3"></textarea></div>
+        </div>
+        <p class="form-note">Do not submit passwords you use elsewhere. Your account is activated only after administrator approval.</p>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:16px">Submit Registration</button>
+        <p class="form-status" data-form-status role="status"></p>
+      </form>
+      <p class="auth-alt">Already approved? <a href="team-login.html">Login here</a></p>
+    </div>
+  </div>
+</section>

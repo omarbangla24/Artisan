@@ -1,0 +1,42 @@
+<!--
+title: Team Member Login | ARTISAN Chartered Accountants
+description: Approved ARTISAN team members can sign in to access and update their team profile information.
+-->
+
+<section class="masthead band">
+  <span class="band-sweep" aria-hidden="true"></span>
+  <span class="band-edge" aria-hidden="true"></span>
+  <div class="container">
+    <div class="tile tile-brand masthead-tile">
+      <div class="masthead-grid">
+        <div>
+          <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Team Member Login</span></div>
+          <span class="chip chip-light">Member Login</span>
+          <h1 style="font-size:clamp(2rem,3.6vw,3rem)">Access your <em>team profile</em></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container auth">
+    <div class="auth-card reveal">
+      <h2 style="font-size:1.5rem">Member Login</h2>
+      <p style="color:var(--muted);font-size:.94rem;margin-bottom:24px">Approved team members can login and update their profile information from the WordPress admin menu.</p>
+      <form data-form data-no-mail data-subject="Team member login request" data-pending="The team member area needs to be connected to your server before login works. Please contact the firm at info@artisan-ca.com." novalidate>
+        <div class="hp-field"><label for="l-site">Website</label><input type="text" id="l-site" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="form-grid">
+          <div class="field is-full"><label for="l-user">Username or Email</label><input type="text" id="l-user" name="username" required></div>
+          <div class="field is-full"><label for="l-pass">Password</label><input type="password" id="l-pass" name="password" required></div>
+          <div class="field is-full">
+            <label class="checkbox"><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:16px">Login</button>
+        <p class="form-status" data-form-status role="status"></p>
+      </form>
+      <p class="auth-alt">Need a team account? <a href="team-register.html">Register here</a></p>
+    </div>
+  </div>
+</section>
