@@ -254,6 +254,50 @@
   var reduceMotion = window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Gallery pagination ---------- */
+  Array.prototype.forEach.call(doc.querySelectorAll('[data-gallery-pager]'), function (pager) {
+    var items = Array.prototype.slice.call(pager.querySelectorAll('[data-gallery-items] > .gallery-item'));
+    var pagesWrap = pager.querySelector('[data-gallery-pages]');
+    var prev = pager.querySelector('[data-gallery-prev]');
+    var next = pager.querySelector('[data-gallery-next]');
+    var perPage = 6;
+    var totalPages = Math.max(1, Math.ceil(items.length / perPage));
+    var currentPage = 0;
+    var buttons = [];
+
+    if (!items.length || !pagesWrap) return;
+
+    function renderPage(page) {
+      currentPage = Math.max(0, Math.min(page, totalPages - 1));
+      items.forEach(function (item, index) {
+        var visible = index >= currentPage * perPage && index < (currentPage + 1) * perPage;
+        item.hidden = !visible;
+      });
+      buttons.forEach(function (button, index) {
+        button.classList.toggle('is-active', index === currentPage);
+        button.setAttribute('aria-current', index === currentPage ? 'page' : 'false');
+      });
+      if (prev) prev.disabled = currentPage === 0;
+      if (next) next.disabled = currentPage === totalPages - 1;
+    }
+
+    for (var i = 0; i < totalPages; i += 1) {
+      var button = doc.createElement('button');
+      button.type = 'button';
+      button.className = 'gallery-page-number';
+      button.textContent = String(i + 1);
+      button.setAttribute('aria-label', 'Gallery page ' + (i + 1));
+      button.addEventListener('click', (function (page) {
+        return function () { renderPage(page); };
+      })(i));
+      pagesWrap.appendChild(button);
+      buttons.push(button);
+    }
+    if (prev) prev.addEventListener('click', function () { renderPage(currentPage - 1); });
+    if (next) next.addEventListener('click', function () { renderPage(currentPage + 1); });
+    renderPage(0);
+  });
+
   /* ---------- Count-up numbers ----------
      Markup always ships the final value, so the correct number shows even if
      this never runs. We only zero it out once we know we're going to animate. */
