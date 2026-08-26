@@ -132,25 +132,34 @@
     }
   }
 
-  /* ---------- Quotation modal ---------- */
-  var modal = doc.querySelector('[data-modal]');
+  /* ---------- Modals (quotation, subscribe, search) ----------
+     [data-modal-open] with no value opens the first [data-modal]; with a value
+     it opens [data-modal="<value>"]. */
   var lastFocus = null;
-  function openModal() {
-    if (!modal) return;
+  var activeModal = null;
+  function openModal(el) {
+    if (!el) return;
     lastFocus = doc.activeElement;
-    modal.classList.add('is-open');
+    activeModal = el;
+    el.classList.add('is-open');
     doc.body.style.overflow = 'hidden';
-    var first = modal.querySelector('input, select, textarea, button');
+    var first = el.querySelector('input, select, textarea, button');
     if (first) first.focus();
   }
   function closeModal() {
-    if (!modal) return;
-    modal.classList.remove('is-open');
+    if (!activeModal) return;
+    activeModal.classList.remove('is-open');
+    activeModal = null;
     doc.body.style.overflow = '';
     if (lastFocus) lastFocus.focus();
   }
   Array.prototype.forEach.call(doc.querySelectorAll('[data-modal-open]'), function (btn) {
-    btn.addEventListener('click', function (e) { e.preventDefault(); setNav(false); openModal(); });
+    btn.addEventListener('click', function (e) {
+      e.preventDefault(); setNav(false);
+      var t = btn.getAttribute('data-modal-open');
+      var m = t ? doc.querySelector('[data-modal="' + t + '"]') : doc.querySelector('[data-modal]');
+      openModal(m);
+    });
   });
   Array.prototype.forEach.call(doc.querySelectorAll('[data-modal-close]'), function (btn) {
     btn.addEventListener('click', closeModal);
@@ -159,11 +168,37 @@
     if (e.key === 'Escape') { closeModal(); setNav(false); }
   });
 
+  /* Keep the hero exactly one viewport tall, minus the (non-sticky) header,
+     so the counters sit at the bottom edge with no white section peeking in. */
+  var siteHeader = doc.querySelector('.site-header');
+  function syncHeaderHeight() {
+    if (siteHeader) {
+      doc.documentElement.style.setProperty('--header-h', siteHeader.offsetHeight + 'px');
+    }
+  }
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight);
+  window.addEventListener('load', syncHeaderHeight);
+
+  /* Site search — static site has no server search, so hand the query to a
+     Google site: search in a new tab. */
+  Array.prototype.forEach.call(doc.querySelectorAll('[data-search-form]'), function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = form.querySelector('input[name="q"]');
+      var q = input ? input.value.trim() : '';
+      if (!q) { if (input) input.focus(); return; }
+      window.open('https://www.google.com/search?q=' +
+        encodeURIComponent('site:artisan-ca.net ' + q), '_blank', 'noopener');
+      closeModal();
+    });
+  });
+
   /* ---------- Forms ----------
      Static site: every form is composed into an email to the firm.
      Replace `handleSubmit` with a POST to your endpoint (PHP, Formspree,
      Netlify Forms, …) when a server-side handler is available.            */
-  var MAIL_TO = 'info@artisan-ca.com';
+  var MAIL_TO = 'info@artisancabd.com';
 
   function handleSubmit(form) {
     var honey = form.querySelector('.hp-field input');
