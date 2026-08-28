@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home" class="active">Home</a>
+      <a href="/" data-nav="home" class="active">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home" class="active"><i>01</i> Home</a>
+    <a href="/" data-nav="home" class="active"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -175,8 +175,8 @@
       <h1 data-hero-title>Need <em>Assistance?</em></h1>
       <p data-hero-copy>Comprehensive range of business services in the areas of Audit and Assurance, Taxation and Business Advisory and Consultancy Services.</p>
       <div class="hero-actions">
-        <a class="btn hero-primary" href="services.html">Explore services <span aria-hidden="true">&rarr;</span></a>
-        <a class="hero-text-link" href="contact.html">Book a consultation <span aria-hidden="true">&nearr;</span></a>
+        <a class="btn hero-primary" href="services">Explore services <span aria-hidden="true">&rarr;</span></a>
+        <a class="hero-text-link" href="contact">Book a consultation <span aria-hidden="true">&nearr;</span></a>
       </div>
       <div class="hero-slide-dots" role="tablist" aria-label="Hero messages">
         <button type="button" data-hero-dot class="is-active" role="tab" aria-label="Show message 1" aria-selected="true"></button>
@@ -205,7 +205,7 @@
       </div>
       <div class="reveal" data-delay="80">
         <p>ARTISAN brings together the legacy of four respected accounting and consulting practices. Today, six practicing partners deliver partner-led audit, tax and advisory support with clarity and accountability.</p>
-        <a class="alink" href="about.html">Discover our story <span aria-hidden="true">&nearr;</span></a>
+        <a class="alink" href="about">Discover our story <span aria-hidden="true">&nearr;</span></a>
       </div>
     </div>
 
@@ -214,7 +214,7 @@
         <span class="experience-eyebrow">Professional practice</span>
         <div class="experience-number"><span data-count="49">49</span><sup>+</sup></div>
         <p>Years of Public Practice, strengthened by independent thinking and responsible advice.</p>
-        <a href="team.html">Meet our partners <span aria-hidden="true">&rarr;</span></a>
+        <a href="team">Meet our partners <span aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="experience-pillars">
         <div class="experience-pillar">
@@ -271,12 +271,12 @@
       </div>
       <div class="head-note reveal" data-delay="80">
         <p>Comprehensive range of business services in the areas of Audit and Assurance, Taxation and Business Advisory and Consultancy Services.</p>
-        <a class="alink" href="services.html">All services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="alink" href="services">All services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       </div>
     </div>
 
     <div class="photo-grid">
-      <a class="photo-card reveal" href="services.html#audit-assurance">
+      <a class="photo-card reveal" href="services#audit-assurance">
         <img src="assets/img/single-servce1.jpg" alt="Auditor reviewing financial statements with a calculator" loading="lazy">
         <span class="photo-num">01</span>
         <div class="photo-card-inner">
@@ -285,7 +285,7 @@
         </div>
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
-      <a class="photo-card reveal" href="services.html#tax-regulatory" data-delay="60">
+      <a class="photo-card reveal" href="services#tax-regulatory" data-delay="60">
         <img src="assets/img/bg2.jpg" alt="Shelves of tax and regulatory reference volumes" loading="lazy">
         <span class="photo-num">02</span>
         <div class="photo-card-inner">
@@ -294,7 +294,7 @@
         </div>
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
-      <a class="photo-card reveal" href="services.html#corporate-finance" data-delay="120">
+      <a class="photo-card reveal" href="services#corporate-finance" data-delay="120">
         <img src="assets/img/bg3.jpg" alt="City skyline representing corporate finance and transactions" loading="lazy">
         <span class="photo-num">03</span>
         <div class="photo-card-inner">
@@ -303,7 +303,7 @@
         </div>
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
-      <a class="photo-card reveal" href="services.html#bpo" data-delay="180">
+      <a class="photo-card reveal" href="services#bpo" data-delay="180">
         <img src="assets/img/single-servce3.jpg" alt="Modern office workstation for outsourced business processes" loading="lazy">
         <span class="photo-num">04</span>
         <div class="photo-card-inner">
@@ -312,7 +312,7 @@
         </div>
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
-      <a class="photo-card reveal" href="services.html#risk-advisory" data-delay="240">
+      <a class="photo-card reveal" href="services#risk-advisory" data-delay="240">
         <img src="assets/img/single-servce2.jpg" alt="Planning calendar and devices for risk monitoring" loading="lazy">
         <span class="photo-num">05</span>
         <div class="photo-card-inner">
@@ -447,30 +447,30 @@
         <h2>Insights &amp; publications.</h2>
       </div>
       <div class="head-note reveal" data-delay="80">
-        <a class="alink" href="resources.html">View all resources
+        <a class="alink" href="resources">View all resources
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       </div>
     </div>
 
     <div class="post-grid">
       <article class="post-card reveal">
-        <a class="post-thumb" href="post-ai-compliance.html" tabindex="-1" aria-hidden="true"><img src="assets/img/post-ai-compliance.webp" alt="" loading="lazy"></a>
+        <a class="post-thumb" href="post-ai-compliance" tabindex="-1" aria-hidden="true"><img src="assets/img/post-ai-compliance.webp" alt="" loading="lazy"></a>
         <div class="post-body">
           <div class="post-meta"><span class="tag">Uncategorized</span><span>July 15, 2026</span><span>&middot;</span><span>4 min read</span></div>
-          <h3><a href="post-ai-compliance.html">What Every Business Owner Should Be Watching in 2026: AI, Compliance, and Smarter Financial Decisions</a></h3>
+          <h3><a href="post-ai-compliance">What Every Business Owner Should Be Watching in 2026: AI, Compliance, and Smarter Financial Decisions</a></h3>
           <p>Running a business has never been more exciting or more challenging. From rapid&hellip;</p>
-          <a class="alink" href="post-ai-compliance.html">Read More
+          <a class="alink" href="post-ai-compliance">Read More
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
         </div>
       </article>
 
       <article class="post-card reveal" data-delay="80">
-        <a class="post-thumb" href="post-international-compliance.html" tabindex="-1" aria-hidden="true"><img src="assets/img/post-international-compliance.webp" alt="" loading="lazy"></a>
+        <a class="post-thumb" href="post-international-compliance" tabindex="-1" aria-hidden="true"><img src="assets/img/post-international-compliance.webp" alt="" loading="lazy"></a>
         <div class="post-body">
           <div class="post-meta"><span class="tag">Uncategorized</span><span>June 25, 2026</span><span>&middot;</span><span>2 min read</span></div>
-          <h3><a href="post-international-compliance.html">Why International Compliance Is Becoming a Competitive Advantage for Businesses</a></h3>
+          <h3><a href="post-international-compliance">Why International Compliance Is Becoming a Competitive Advantage for Businesses</a></h3>
           <p>In today&rsquo;s connected economy, businesses are no longer competing only within their own country. Whether you export products,&hellip;</p>
-          <a class="alink" href="post-international-compliance.html">Read More
+          <a class="alink" href="post-international-compliance">Read More
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
         </div>
       </article>
@@ -489,9 +489,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -509,17 +509,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

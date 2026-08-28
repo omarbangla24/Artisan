@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A F M Alamgir FCA | ARTISAN Chartered Accountants</title>
-<meta name="description" content="Chief Executive Partner at ARTISAN Chartered Accountants, Dhaka. Professional profile, qualifications and contact details.">
-<link rel="canonical" href="https://artisan-ca.net/partner-alamgir.html">
+<title>Privacy Policy | ARTISAN Chartered Accountants</title>
+<meta name="description" content="How ARTISAN Chartered Accountants collects, uses, stores and protects personal and business information shared with the firm.">
+<link rel="canonical" href="https://artisan-ca.net/privacy-policy">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="A F M Alamgir FCA | ARTISAN Chartered Accountants">
-<meta property="og:description" content="Chief Executive Partner at ARTISAN Chartered Accountants, Dhaka. Professional profile, qualifications and contact details.">
+<meta property="og:title" content="Privacy Policy | ARTISAN Chartered Accountants">
+<meta property="og:description" content="How ARTISAN Chartered Accountants collects, uses, stores and protects personal and business information shared with the firm.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about" class="active">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about" class="active"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -126,9 +126,12 @@
     <div class="tile tile-brand masthead-tile">
       <div class="masthead-grid">
         <div>
-          <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="team.html">Our Partners</a><span>/</span><span>A F M Alamgir FCA</span></div>
-          <span class="chip chip-light">Chief Executive Partner</span>
-          <h1 class="masthead-name" style="font-size:clamp(2rem,3.6vw,3.1rem)">A F M Alamgir FCA</h1>
+          <div class="crumbs"><a href="/">Home</a><span>/</span><span>Privacy Policy</span></div>
+          <span class="chip chip-light">Legal</span>
+          <h1>Privacy <em>Policy</em></h1>
+        </div>
+        <div class="masthead-note">
+          <p>At ARTISAN Chartered Accountants, we value your privacy and are committed to protecting your personal information.</p>
         </div>
       </div>
     </div>
@@ -136,43 +139,54 @@
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="profile">
-      <div class="reveal">
-        <div class="profile-figure">
-          <img src="assets/img/partner-alamgir.jpg" alt="A F M Alamgir FCA">
-        </div>
-        <div class="profile-meta">
-          <dl>
-            <div><dt>Role</dt><dd>Chief Executive Partner</dd></div>
-            <div><dt>Firm</dt><dd>ARTISAN Chartered Accountants</dd></div>
-            <div><dt>Office</dt><dd>Banani, Dhaka</dd></div>
-          </dl>
-        </div>
-      </div>
+  <div class="container narrow">
+    <div class="tile reveal">
+      <div class="prose">
+        <h2>Information We Collect</h2>
+        <p>When you visit our website or contact us, we may collect:</p>
+        <ul>
+          <li>Name</li><li>Email Address</li><li>Phone Number</li><li>Company Name</li><li>Country</li>
+          <li>Any information you submit through our contact forms</li>
+        </ul>
+        <p>We also collect non-personal information such as browser type, device information, pages visited, and cookies to improve website performance.</p>
 
-      <div class="reveal" data-delay="80">
-        <div class="tile">
-          
-          <div style="font-size:1.02rem;line-height:1.78;color:var(--ink-2)">
-            <p>Mr. AFM Alamgir, Chief Executive Partner of ARTISAN, Chartered Accountants is a fellow member of the Institute of Chartered Accountants of Bangladesh, in 1980 and membership no. being 268 who possess rich national and international experience extending to more than three decades. During this extensive career, he has obtained diversified experiences in services relating to industrial, commercial and individual clients in audit, business development, taxation and corporate consultancy.</p>
-            <p>He held the position of Chairman of DRC and Investigation and Disciplinary committee of the Institute of Chartered Accountants (ICAB). Mr. Alamgir is a past Vice-president of ICAB and also one of the founders Directors/vice Chairman of a leading Merchant Bank. He had also served as a Director of DESCO previously for 3 (Three) years. He served Rotary International as District Governor during the year 2018-19.</p>
-          </div>
-        </div>
+        <h2>How We Use Your Information</h2>
+        <p>Your information may be used to:</p>
+        <ul>
+          <li>Respond to your inquiries</li>
+          <li>Provide quotations and product information</li>
+          <li>Improve our products and services</li>
+          <li>Send important updates regarding our business</li>
+          <li>Enhance website performance and user experience</li>
+          <li>Comply with legal obligations</li>
+        </ul>
 
-        <div class="tile tile-flat" style="margin-top:var(--gap)">
-          <h4 style="margin-bottom:16px">Contact</h4>
-          <div class="links" style="display:grid;gap:10px;font-size:.95rem">
-            <a href="mailto:afmalamgirfca@artisancabd.com" style="display:inline-flex;align-items:center;gap:10px;color:var(--body)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg><span>afmalamgirfca@artisancabd.com</span></a>
-            <a href="tel:+8801711545011"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>+8801711545011</span></a>
-          </div>
-          <style>.links svg{width:15px;height:15px;color:var(--brand);flex:none}.links a:hover{color:var(--brand)}</style>
-        </div>
+        <h2>Cookies</h2>
+        <p>Our website may use cookies to improve browsing experience, analyze traffic, and remember user preferences. You may disable cookies through your browser settings.</p>
 
-        <div class="actions" style="margin-top:var(--gap);justify-content:space-between">
-          <a class="alink" href="partner-harun.html">&larr; Md. Harun - Or - Rashid FCA</a>
-          <a class="alink" href="partner-salam.html">Mr. Md. Abdus Salam, FCA, FCS &rarr;</a>
-        </div>
+        <h2>Information Sharing</h2>
+        <p>We do not sell, rent, or trade your personal information. Information may only be shared with trusted service providers who assist us in operating our business or when required by law.</p>
+
+        <h2>Data Security</h2>
+        <p>We implement appropriate technical and organizational security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
+
+        <h2>Third-Party Links</h2>
+        <p>Our website may contain links to external websites. We are not responsible for their privacy practices or content.</p>
+
+        <h2>Your Rights</h2>
+        <p>Depending on your location, you may have the right to:</p>
+        <ul>
+          <li>Access your personal data</li>
+          <li>Request corrections</li>
+          <li>Request deletion of your information</li>
+          <li>Withdraw consent for marketing communications</li>
+        </ul>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be published on this page with the updated effective date.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions regarding this Privacy Policy, please contact us using the information available on our <a href="contact">Contact page</a>.</p>
       </div>
     </div>
   </div>
@@ -189,9 +203,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -209,17 +223,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

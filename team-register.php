@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gallery | ARTISAN Chartered Accountants</title>
-<meta name="description" content="Gallery of ARTISAN Chartered Accountants moments, people, events and professional engagements.">
-<link rel="canonical" href="https://artisan-ca.net/gallery.html">
+<title>Team Member Registration | ARTISAN Chartered Accountants</title>
+<meta name="description" content="Submit an account request to join the ARTISAN Chartered Accountants team member area. Admin approval is required before login access becomes active.">
+<link rel="canonical" href="https://artisan-ca.net/team-register">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Gallery | ARTISAN Chartered Accountants">
-<meta property="og:description" content="Gallery of ARTISAN Chartered Accountants moments, people, events and professional engagements.">
+<meta property="og:title" content="Team Member Registration | ARTISAN Chartered Accountants">
+<meta property="og:description" content="Submit an account request to join the ARTISAN Chartered Accountants team member area. Admin approval is required before login access becomes active.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery" class="active">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery" class="active"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -119,34 +119,54 @@
 </aside>
 
 <main id="main">
-<section class="gallery-hero section">
+<section class="masthead band">
+  <span class="band-sweep" aria-hidden="true"></span>
+  <span class="band-edge" aria-hidden="true"></span>
   <div class="container">
-    <div class="gallery-hero-grid">
-      <div class="gallery-hero-copy reveal">
-        <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Gallery</span></div>
-        <span class="chip">Gallery</span>
-        <h1>Gallery</h1>
-        <p>A few moments from ARTISAN Chartered Accountants.</p>
+    <div class="tile tile-brand masthead-tile">
+      <div class="masthead-grid">
+        <div>
+          <div class="crumbs"><a href="/">Home</a><span>/</span><span>Team Member Registration</span></div>
+          <span class="chip chip-light">Team Access</span>
+          <h1 style="font-size:clamp(2rem,3.6vw,3rem)">Register as a <em>team member</em></h1>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="gallery-paged section-sm">
-  <div class="container">
-    <div class="gallery-masonry">
-      <figure class="gallery-item reveal">
-        <img src="assets/img/e1.jpg" alt="ARTISAN Chartered Accountants event" loading="lazy">
-        <figcaption><span>Event</span>Professional gathering with the ARTISAN team.</figcaption>
-      </figure>
-      <figure class="gallery-item reveal">
-        <img src="assets/img/e2.jpg" alt="ARTISAN Chartered Accountants team moment" loading="lazy">
-        <figcaption><span>Team</span>Team moment from ARTISAN Chartered Accountants.</figcaption>
-      </figure>
-      <figure class="gallery-item reveal">
-        <img src="assets/img/e3.jpg" alt="ARTISAN Chartered Accountants professional gathering" loading="lazy">
-        <figcaption><span>Milestone</span>Professional event and firm milestone.</figcaption>
-      </figure>
+<section class="section">
+  <div class="container auth" style="max-width:720px">
+    <div class="auth-card reveal">
+      <h2 style="font-size:1.5rem">Team Access</h2>
+      <p style="color:var(--muted);font-size:.94rem;margin-bottom:24px">Submit your account request. Admin approval is required before login access becomes active.</p>
+      <form data-form data-no-mail data-subject="Team member registration request" data-pending="The registration endpoint needs to be connected to your server. Please email your details to info@artisancabd.com in the meantime." novalidate>
+        <div class="hp-field"><label for="r-site">Website</label><input type="text" id="r-site" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="form-grid">
+          <div class="field is-full"><label for="r-name">Full Name</label><input type="text" id="r-name" name="full_name" required></div>
+          <div class="field"><label for="r-email">Email</label><input type="email" id="r-email" name="email" required></div>
+          <div class="field"><label for="r-user">Username</label><input type="text" id="r-user" name="username" required></div>
+          <div class="field"><label for="r-pass">Password</label><input type="password" id="r-pass" name="password" required></div>
+          <div class="field">
+            <label for="r-designation">Designation</label>
+            <select id="r-designation" name="designation">
+              <option value="">Select Designation</option>
+              <option>Designation 1</option>
+              <option>Designation 2</option>
+              <option>Designation 3</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="field"><label for="r-custom">Custom Designation</label><input type="text" id="r-custom" name="custom_designation"></div>
+          <div class="field"><label for="r-dept">Department</label><input type="text" id="r-dept" name="department"></div>
+          <div class="field is-full"><label for="r-photo">Profile Picture</label><input type="file" id="r-photo" name="profile_picture" accept="image/*"></div>
+          <div class="field is-full"><label for="r-desc">Short Description</label><textarea id="r-desc" name="description" rows="3"></textarea></div>
+        </div>
+        <p class="form-note">Do not submit passwords you use elsewhere. Your account is activated only after administrator approval.</p>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:16px">Submit Registration</button>
+        <p class="form-status" data-form-status role="status"></p>
+      </form>
+      <p class="auth-alt">Already approved? <a href="team-login">Login here</a></p>
     </div>
   </div>
 </section>
@@ -162,9 +182,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -182,17 +202,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

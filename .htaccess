@@ -1,0 +1,14 @@
+# Clean URLs — serve .php files without the extension
+RewriteEngine On
+
+# Use index.php as the directory index
+DirectoryIndex index.php
+
+# 1) If someone requests /page.php or /page.html directly, 301 to the clean /page
+RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.(php|html)[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 2) Internally map the clean /page to /page.php (only when that file exists)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

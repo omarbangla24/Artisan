@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Md. Harun - Or - Rashid FCA | ARTISAN Chartered Accountants</title>
-<meta name="description" content="Senior Partner at ARTISAN Chartered Accountants, Dhaka. Professional profile, qualifications and contact details.">
-<link rel="canonical" href="https://artisan-ca.net/partner-harun.html">
+<title>Terms of Reference | ARTISAN Chartered Accountants</title>
+<meta name="description" content="The framework defining the scope, responsibilities and professional principles under which ARTISAN Chartered Accountants delivers its services.">
+<link rel="canonical" href="https://artisan-ca.net/terms-of-reference">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Md. Harun - Or - Rashid FCA | ARTISAN Chartered Accountants">
-<meta property="og:description" content="Senior Partner at ARTISAN Chartered Accountants, Dhaka. Professional profile, qualifications and contact details.">
+<meta property="og:title" content="Terms of Reference | ARTISAN Chartered Accountants">
+<meta property="og:description" content="The framework defining the scope, responsibilities and professional principles under which ARTISAN Chartered Accountants delivers its services.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about" class="active">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about" class="active"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -126,9 +126,12 @@
     <div class="tile tile-brand masthead-tile">
       <div class="masthead-grid">
         <div>
-          <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="team.html">Our Partners</a><span>/</span><span>Md. Harun - Or - Rashid FCA</span></div>
-          <span class="chip chip-light">Senior Partner</span>
-          <h1 class="masthead-name" style="font-size:clamp(2rem,3.6vw,3.1rem)">Md. Harun - Or - Rashid FCA</h1>
+          <div class="crumbs"><a href="/">Home</a><span>/</span><span>Terms of Reference</span></div>
+          <span class="chip chip-light">Framework</span>
+          <h1>Terms of <em>Reference</em></h1>
+        </div>
+        <div class="masthead-note">
+          <p>Scope, responsibilities and professional principles governing every ARTISAN engagement.</p>
         </div>
       </div>
     </div>
@@ -136,43 +139,63 @@
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="profile">
-      <div class="reveal">
-        <div class="profile-figure">
-          <img src="assets/img/partner-harun.jpg" alt="Md. Harun - Or - Rashid FCA">
-        </div>
-        <div class="profile-meta">
-          <dl>
-            <div><dt>Role</dt><dd>Senior Partner</dd></div>
-            <div><dt>Firm</dt><dd>ARTISAN Chartered Accountants</dd></div>
-            <div><dt>Office</dt><dd>Banani, Dhaka</dd></div>
-          </dl>
-        </div>
-      </div>
+  <div class="container narrow">
+    <div class="tile reveal">
+      <div class="prose">
+        <h2>1. Purpose</h2>
+        <p>The purpose of this Terms of Reference (ToR) is to define the scope, responsibilities, and professional principles under which ARTISAN Chartered Accountants delivers its services. This document establishes the framework for maintaining quality, integrity, independence, and compliance across all professional engagements.</p>
 
-      <div class="reveal" data-delay="80">
-        <div class="tile">
-          
-          <div style="font-size:1.02rem;line-height:1.78;color:var(--ink-2)">
-            <p>Mr. Md. Harun Or Rashid is a fellow member of the Institute of Chartered Accountants of Bangladesh and acquired the membership of ICAB in the year 1995 and his membership no. under ICAB being 697. Subsequently he is being admitted as FCA in the year 2000. Prior to qualify as a chartered accountant he successfully completed B. Com (under DU) and subsequently also completed BBA and MBA in Human Resource Management.</p>
-            <p>He holds the positions of Head of Finance, Accounts, Audit, Taxation and Company Affairs of different renowned and largest Group of Industries and Financial Institutes of the country comprising with Listed &amp; Non-Listed Public and Private Limited Companies about 28 Years. He has extensive knowledge regarding Operations.</p>
-          </div>
-        </div>
+        <h2>2. About ARTISAN Chartered Accountants</h2>
+        <p>ARTISAN Chartered Accountants is a professional accounting and consulting firm established through the merger of four reputable Chartered Accountancy firms. Backed by over four decades of combined professional experience and led by six practicing partners, the firm delivers reliable accounting, assurance, taxation, and business advisory services to a diverse range of clients.</p>
 
-        <div class="tile tile-flat" style="margin-top:var(--gap)">
-          <h4 style="margin-bottom:16px">Contact</h4>
-          <div class="links" style="display:grid;gap:10px;font-size:.95rem">
-            <a href="mailto:harunfca697@artisancabd.com" style="display:inline-flex;align-items:center;gap:10px;color:var(--body)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg><span>harunfca697@artisancabd.com</span></a>
-            <a href="tel:+8801714102727"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>+8801714102727</span></a>
-          </div>
-          <style>.links svg{width:15px;height:15px;color:var(--brand);flex:none}.links a:hover{color:var(--brand)}</style>
-        </div>
+        <h2>3. Scope of Professional Services</h2>
+        <p>ARTISAN Chartered Accountants provides a comprehensive range of professional services, including but not limited to:</p>
+        <ul>
+          <li>Accounting and Bookkeeping Services</li>
+          <li>Audit and Assurance Services</li>
+          <li>Statutory and External Audits</li>
+          <li>Internal Audit</li>
+          <li>IFRS Implementation</li>
+          <li>Outsourced Accounting Solutions</li>
+          <li>Tax Planning and Compliance</li>
+          <li>Corporate Governance Compliance Certification</li>
+          <li>IPO Advisory and Financial Reporting</li>
+          <li>Annual Report Preparation</li>
+          <li>Business Advisory and Consulting Services</li>
+          <li>Financial Reporting and Regulatory Compliance</li>
+        </ul>
 
-        <div class="actions" style="margin-top:var(--gap);justify-content:space-between">
-          <a class="alink" href="partner-taiyab.html">&larr; Dr. ASM Hossain Taiyab FCA</a>
-          <a class="alink" href="partner-alamgir.html">A F M Alamgir FCA &rarr;</a>
-        </div>
+        <h2>4. Professional Responsibilities</h2>
+        <p>The firm is committed to:</p>
+        <ul>
+          <li>Delivering professional services with competence and due care.</li>
+          <li>Maintaining independence, objectivity, and ethical standards.</li>
+          <li>Protecting the confidentiality of client information.</li>
+          <li>Complying with applicable laws, regulations, and professional standards.</li>
+          <li>Providing practical, accurate, and value-driven business solutions.</li>
+          <li>Maintaining transparent communication throughout each engagement.</li>
+        </ul>
+
+        <h2>5. Client Responsibilities</h2>
+        <p>Clients are expected to:</p>
+        <ul>
+          <li>Provide complete and accurate information required for professional engagements.</li>
+          <li>Cooperate throughout the assignment by supplying requested documentation.</li>
+          <li>Review reports and recommendations within agreed timelines.</li>
+          <li>Fulfil agreed contractual and financial obligations.</li>
+        </ul>
+
+        <h2>6. Quality Assurance</h2>
+        <p>Every engagement is performed in accordance with recognized professional standards and internal quality control procedures. ARTISAN Chartered Accountants is committed to continuous improvement, technical excellence, and delivering services that meet the highest standards of professional practice.</p>
+
+        <h2>7. Confidentiality</h2>
+        <p>All client information obtained during professional engagements will be treated as confidential unless disclosure is required by applicable law, professional regulations, or with the client&rsquo;s written consent.</p>
+
+        <h2>8. Independence and Ethics</h2>
+        <p>ARTISAN Chartered Accountants performs its services with integrity, independence, objectivity, and professional competence. Every engagement is conducted in accordance with the ethical principles expected of Chartered Accountants.</p>
+
+        <h2>9. Review and Updates</h2>
+        <p>This Terms of Reference may be reviewed and updated periodically to reflect changes in professional standards, regulatory requirements, or the firm&rsquo;s operational practices.</p>
       </div>
     </div>
   </div>
@@ -189,9 +212,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -209,17 +232,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

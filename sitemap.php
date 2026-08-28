@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy | ARTISAN Chartered Accountants</title>
-<meta name="description" content="How ARTISAN Chartered Accountants collects, uses, stores and protects personal and business information shared with the firm.">
-<link rel="canonical" href="https://artisan-ca.net/privacy-policy.html">
+<title>Sitemap | ARTISAN Chartered Accountants</title>
+<meta name="description" content="An overview of the primary sections available on the ARTISAN Chartered Accountants website — services, company information and client resources.">
+<link rel="canonical" href="https://artisan-ca.net/sitemap">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Privacy Policy | ARTISAN Chartered Accountants">
-<meta property="og:description" content="How ARTISAN Chartered Accountants collects, uses, stores and protects personal and business information shared with the firm.">
+<meta property="og:title" content="Sitemap | ARTISAN Chartered Accountants">
+<meta property="og:description" content="An overview of the primary sections available on the ARTISAN Chartered Accountants website — services, company information and client resources.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,11 +42,11 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
-          <p class="brand-tagline">Audit. Tax. Consulting.<br>Wealth Management.</p>
+          <p class="brand-tagline">Audit Tax. Consulting.<br>Wealth Management.</p>
           <span class="brand-rule" aria-hidden="true"></span>
           <svg class="brand-anniversary" viewBox="0 0 250 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 50th year">
             <text class="am-digit" x="-2" y="112">5</text>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about" class="active">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about" class="active">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about" class="active"><i>02</i> About</a>
+      <a href="about" data-nav="about" class="active"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -126,12 +126,12 @@
     <div class="tile tile-brand masthead-tile">
       <div class="masthead-grid">
         <div>
-          <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Privacy Policy</span></div>
-          <span class="chip chip-light">Legal</span>
-          <h1>Privacy <em>Policy</em></h1>
+          <div class="crumbs"><a href="/">Home</a><span>/</span><span>Sitemap</span></div>
+          <span class="chip chip-light">Sitemap</span>
+          <h1>Find your way <em>around the firm.</em></h1>
         </div>
         <div class="masthead-note">
-          <p>At ARTISAN Chartered Accountants, we value your privacy and are committed to protecting your personal information.</p>
+          <p>This sitemap provides an overview of the primary sections available on the ARTISAN Chartered Accountants website, helping visitors easily navigate our professional services, company information, and client resources.</p>
         </div>
       </div>
     </div>
@@ -139,55 +139,77 @@
 </section>
 
 <section class="section">
-  <div class="container narrow">
-    <div class="tile reveal">
-      <div class="prose">
-        <h2>Information We Collect</h2>
-        <p>When you visit our website or contact us, we may collect:</p>
+  <div class="container">
+    <div class="sitemap-grid">
+      <article class="sitemap-card reveal">
+        <h3><a href="/">Home</a></h3>
+        <p>An introduction to ARTISAN Chartered Accountants, highlighting our expertise, professional legacy, and commitment to delivering trusted accounting, audit, taxation, and advisory services.</p>
+      </article>
+
+      <article class="sitemap-card reveal" data-delay="60">
+        <h3><a href="about">About Us</a></h3>
+        <p>Learn about our firm&rsquo;s history, the merger of four established Chartered Accountancy firms, our experienced practicing partners, professional values, mission, vision, and commitment to excellence.</p>
+      </article>
+
+      <article class="sitemap-card reveal" data-delay="120">
+        <h3><a href="services">Our Services</a></h3>
+        <p>Explore our complete range of professional services, including:</p>
         <ul>
-          <li>Name</li><li>Email Address</li><li>Phone Number</li><li>Company Name</li><li>Country</li>
-          <li>Any information you submit through our contact forms</li>
+          <li>Accounting Services</li><li>Audit &amp; Assurance</li><li>Statutory Audit</li><li>Internal Audit</li>
+          <li>IFRS Implementation</li><li>Outsourced Accounting</li><li>Taxation Services</li><li>IPO Support</li>
+          <li>Annual Report Preparation</li><li>Corporate Governance Compliance Certification</li><li>Business Advisory &amp; Consultancy</li>
         </ul>
-        <p>We also collect non-personal information such as browser type, device information, pages visited, and cookies to improve website performance.</p>
+      </article>
 
-        <h2>How We Use Your Information</h2>
-        <p>Your information may be used to:</p>
+      <article class="sitemap-card reveal">
+        <h3><a href="index#services">Industries We Serve</a></h3>
+        <p>Discover how ARTISAN Chartered Accountants supports clients across a wide range of sectors, including:</p>
         <ul>
-          <li>Respond to your inquiries</li>
-          <li>Provide quotations and product information</li>
-          <li>Improve our products and services</li>
-          <li>Send important updates regarding our business</li>
-          <li>Enhance website performance and user experience</li>
-          <li>Comply with legal obligations</li>
+          <li>Government Organizations</li><li>Public Sector Corporations</li><li>Autonomous Bodies</li>
+          <li>Non-Governmental Organizations (NGOs)</li><li>Listed Public Companies</li><li>Multinational Companies</li>
+          <li>Banking Institutions</li><li>Insurance Companies</li><li>Utility Service Providers</li><li>Commercial Enterprises</li>
         </ul>
+      </article>
 
-        <h2>Cookies</h2>
-        <p>Our website may use cookies to improve browsing experience, analyze traffic, and remember user preferences. You may disable cookies through your browser settings.</p>
+      <article class="sitemap-card reveal" data-delay="60">
+        <h3><a href="about">Our Values</a></h3>
+        <p>Understand the principles that guide our professional practice, including integrity, quality, independence, ethics, technical excellence, confidentiality, and client-focused service.</p>
+      </article>
 
-        <h2>Information Sharing</h2>
-        <p>We do not sell, rent, or trade your personal information. Information may only be shared with trusted service providers who assist us in operating our business or when required by law.</p>
+      <article class="sitemap-card reveal" data-delay="120">
+        <h3><a href="vision#our-mission">Mission</a> &amp; <a href="vision#our-vision">Vision</a></h3>
+        <p>Learn about our commitment to delivering value-driven professional services and our vision of becoming one of Bangladesh&rsquo;s leading Chartered Accountancy firms with a strong international presence.</p>
+      </article>
 
-        <h2>Data Security</h2>
-        <p>We implement appropriate technical and organizational security measures to protect your personal information from unauthorized access, alteration, or disclosure.</p>
+      <article class="sitemap-card reveal">
+        <h3><a href="terms-and-conditions">Terms &amp; Conditions</a></h3>
+        <p>Read the terms governing the use of our website and the general conditions relating to our professional services.</p>
+      </article>
 
-        <h2>Third-Party Links</h2>
-        <p>Our website may contain links to external websites. We are not responsible for their privacy practices or content.</p>
+      <article class="sitemap-card reveal" data-delay="60">
+        <h3><a href="terms-of-reference">Terms of Reference</a></h3>
+        <p>Review the framework that defines our professional responsibilities, service standards, client expectations, confidentiality, and ethical commitments.</p>
+      </article>
 
-        <h2>Your Rights</h2>
-        <p>Depending on your location, you may have the right to:</p>
-        <ul>
-          <li>Access your personal data</li>
-          <li>Request corrections</li>
-          <li>Request deletion of your information</li>
-          <li>Withdraw consent for marketing communications</li>
-        </ul>
+      <article class="sitemap-card reveal" data-delay="120">
+        <h3><a href="privacy-policy">Privacy Policy</a></h3>
+        <p>Learn how we collect, use, store, and protect personal and business information shared with our firm.</p>
+      </article>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be published on this page with the updated effective date.</p>
+      <article class="sitemap-card reveal">
+        <h3><a href="contact">Contact Us</a></h3>
+        <p>Get in touch with ARTISAN Chartered Accountants for professional accounting, audit, taxation, assurance, and business advisory services through our available contact channels.</p>
+      </article>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions regarding this Privacy Policy, please contact us using the information available on our <a href="contact.html">Contact page</a>.</p>
-      </div>
+      <article class="sitemap-card reveal" data-delay="60">
+        <h3><a href="team">Our Partners</a></h3>
+        <p>Meet the six practicing partners leading the firm&rsquo;s audit, taxation, advisory and outsourcing engagements.</p>
+      </article>
+
+      <article class="sitemap-card reveal" data-delay="120">
+        <h3><a href="resources">Resources</a></h3>
+        <p>Insights and publications from our professionals on compliance, technology, risk and financial reporting.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -203,9 +225,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -223,17 +245,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

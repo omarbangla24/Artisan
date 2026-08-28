@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact | ARTISAN Chartered Accountants</title>
-<meta name="description" content="Partner contact information and office addresses for ARTISAN Chartered Accountants — corporate office and branch office in Banani, Dhaka, Bangladesh.">
-<link rel="canonical" href="https://artisan-ca.net/contact.html">
+<title>Gallery | ARTISAN Chartered Accountants</title>
+<meta name="description" content="Gallery of ARTISAN Chartered Accountants moments, people, events and professional engagements.">
+<link rel="canonical" href="https://artisan-ca.net/gallery">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Contact | ARTISAN Chartered Accountants">
-<meta property="og:description" content="Partner contact information and office addresses for ARTISAN Chartered Accountants — corporate office and branch office in Banani, Dhaka, Bangladesh.">
+<meta property="og:title" content="Gallery | ARTISAN Chartered Accountants">
+<meta property="og:description" content="Gallery of ARTISAN Chartered Accountants moments, people, events and professional engagements.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact" class="active">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery" class="active">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact" class="active"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery" class="active"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -119,177 +119,37 @@
 </aside>
 
 <main id="main">
-<section class="masthead band">
-  <span class="band-sweep" aria-hidden="true"></span>
-  <span class="band-edge" aria-hidden="true"></span>
+<section class="gallery-hero section">
   <div class="container">
-    <div class="tile tile-brand masthead-tile">
-      <div class="masthead-grid">
-        <div>
-          <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
-          <span class="chip chip-light">Our Partners &amp; Office</span>
-          <h1>Partner&rsquo;s contact info &amp; <em>office address</em></h1>
-        </div>
-        <div class="masthead-note">
-          <p>Reach the responsible partner directly, or write to the firm and we will route your request.</p>
-        </div>
+    <div class="gallery-hero-grid">
+      <div class="gallery-hero-copy reveal">
+        <div class="crumbs"><a href="/">Home</a><span>/</span><span>Gallery</span></div>
+        <span class="chip">Gallery</span>
+        <h1>Gallery</h1>
+        <p>A few moments from ARTISAN Chartered Accountants.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="gallery-paged section-sm">
   <div class="container">
-    <div class="head">
-      <div class="reveal">
-        <span class="chip">Get in Touch</span>
-        <h2>Send us a message.</h2>
-      </div>
-      <div class="head-note reveal" data-delay="80">
-        <p class="mb-0">Have a question or need assistance? Share your details and our team will get back to you shortly.</p>
-      </div>
-    </div>
-
-    <div class="split" style="margin-top:var(--gap)">
-      <div class="tile tile-brand split-5 reveal">
-        <span class="chip chip-light">Contact Form</span>
-        <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem)">We'd love to hear from you</h2>
-        <ul class="ticks" style="margin-top:24px">
-          <li>Tell us your name and how to reach you</li>
-          <li>Describe what you need in a short message</li>
-          <li>We respond within one business day</li>
-        </ul>
-      </div>
-
-      <div class="tile split-7 reveal" data-delay="80">
-        <form data-form data-subject="Contact enquiry" novalidate>
-          <div class="hp-field"><label for="f-site">Website</label><input type="text" id="f-site" name="website" tabindex="-1" autocomplete="off"></div>
-          <div class="form-grid">
-            <div class="field"><label for="f-name">Name <span class="req">*</span></label><input type="text" id="f-name" name="name" required></div>
-            <div class="field"><label for="f-email">Email <span class="req">*</span></label><input type="email" id="f-email" name="email" required></div>
-            <div class="field is-full"><label for="f-phone">Phone <span class="req">*</span></label><input type="tel" id="f-phone" name="phone" required></div>
-            <div class="field is-full"><label for="f-message">Message <span class="req">*</span></label><textarea id="f-message" name="message" rows="4" required></textarea></div>
-          </div>
-          <button type="submit" class="btn btn-primary" style="margin-top:16px">Send Message
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
-          <p class="form-status" data-form-status role="status"></p>
-        </form>
-      </div>
+    <div class="gallery-masonry">
+      <figure class="gallery-item reveal">
+        <img src="assets/img/e1.jpg" alt="ARTISAN Chartered Accountants event" loading="lazy">
+        <figcaption><span>Event</span>Professional gathering with the ARTISAN team.</figcaption>
+      </figure>
+      <figure class="gallery-item reveal">
+        <img src="assets/img/e2.jpg" alt="ARTISAN Chartered Accountants team moment" loading="lazy">
+        <figcaption><span>Team</span>Team moment from ARTISAN Chartered Accountants.</figcaption>
+      </figure>
+      <figure class="gallery-item reveal">
+        <img src="assets/img/e3.jpg" alt="ARTISAN Chartered Accountants professional gathering" loading="lazy">
+        <figcaption><span>Milestone</span>Professional event and firm milestone.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="head">
-      <div class="reveal">
-        <span class="chip">Partner&rsquo;s Contact Info</span>
-        <h2>Consult with a Partner.</h2>
-      </div>
-    </div>
-
-    <div class="contact-grid">
-      <article class="pcard reveal">
-        <span class="role">Chief Executive Partner</span>
-        <h3>A F M Alamgir FCA</h3>
-        <div class="links">
-          <a href="mailto:afmalamgirfca@artisancabd.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg>afmalamgirfca@artisancabd.com</a>
-          <a href="tel:+8801711545011"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+8801711545011</a>
-        </div>
-      </article>
-
-      <article class="pcard reveal" data-delay="60">
-        <span class="role">Senior Partner</span>
-        <h3>Md. Abdus Salam FCA</h3>
-        <div class="links">
-          <a href="mailto:masalamfca@artisancabd.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg>masalamfca@artisancabd.com</a>
-          <a href="tel:+8801819252800"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+8801819252800</a>
-        </div>
-      </article>
-
-      <article class="pcard reveal" data-delay="120">
-        <span class="role">Senior Partner</span>
-        <h3>Md. A M Khan Lohani FCA</h3>
-        <div class="links">
-          <a href="mailto:amklohanifca@artisancabd.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg>amklohanifca@artisancabd.com</a>
-          <a href="tel:+8801711326275"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+8801711326275</a>
-        </div>
-      </article>
-
-      <article class="pcard reveal">
-        <span class="role">Senior Partner</span>
-        <h3>Md. Selim Reza FCA</h3>
-        <div class="links">
-          <a href="mailto:selimrezafca@artisancabd.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg>selimrezafca@artisancabd.com</a>
-          <a href="tel:+8801707797851"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+8801707797851</a>
-        </div>
-      </article>
-
-      <article class="pcard reveal" data-delay="60">
-        <span class="role">Senior Partner</span>
-        <h3>Dr. ASM Hossain Taiyab FCA</h3>
-        <div class="links">
-          <a href="mailto:asmhtayiabfca@artisancabd.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg>asmhtayiabfca@artisancabd.com</a>
-          <a href="tel:+8801964267177"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+8801964267177</a>
-        </div>
-      </article>
-
-      <article class="pcard reveal" data-delay="120">
-        <span class="role">Senior Partner</span>
-        <h3>Md. Harun - Or - Rashid FCA</h3>
-        <div class="links">
-          <a href="mailto:harunfca697@artisancabd.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg>harunfca697@artisancabd.com</a>
-          <a href="tel:+8801714102727"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+8801714102727</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0">
-  <div class="container">
-    <div class="head">
-      <div class="reveal">
-        <span class="chip">Office Address</span>
-        <h2>Visit our office.</h2>
-      </div>
-    </div>
-    <div class="split office-cards" style="margin-top:var(--gap)">
-      <div class="tile tile-brand split-6 reveal">
-        <span class="chip chip-light">Main Office</span>
-        <address style="font-style:normal;font-size:1.06rem;line-height:1.75;color:#fff">
-          Sonargaon Terrace (2nd Floor),<br>
-          House-52, Road-13C, Block-E<br>
-          Banani, Dhaka-1213, Bangladesh
-        </address>
-        <div class="footer-lines" style="margin-top:24px">
-          <a href="mailto:info@artisancabd.com">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg></span>
-            <span><span class="k">Email</span>info@artisancabd.com</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="tile tile-brand split-6 reveal" data-delay="80">
-        <span class="chip chip-light">Banani Office</span>
-        <address style="font-style:normal;font-size:1.06rem;line-height:1.75;color:#fff">
-          ARTISAN Chartered Accountants<br>
-          Banani Branch<br>
-          House No. 7 (2nd Floor),<br>
-          Road No. 2/1, Block-L, Banani<br>
-          Dhaka-1213, Bangladesh
-        </address>
-        <div class="footer-lines" style="margin-top:24px">
-          <a href="mailto:info@artisancabd.com">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg></span>
-            <span><span class="k">Email</span>info@artisancabd.com</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <section class="section-sm">
@@ -302,9 +162,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -322,17 +182,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

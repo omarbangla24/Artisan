@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resources | ARTISAN Chartered Accountants</title>
-<meta name="description" content="Insights and publications from ARTISAN Chartered Accountants on AI, compliance, international standards and smarter financial decisions for business owners.">
-<link rel="canonical" href="https://artisan-ca.net/resources.html">
+<title>Our Management Team | ARTISAN Chartered Accountants</title>
+<meta name="description" content="ARTISAN Chartered Accountants management team information.">
+<link rel="canonical" href="https://artisan-ca.net/management">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Resources | ARTISAN Chartered Accountants">
-<meta property="og:description" content="Insights and publications from ARTISAN Chartered Accountants on AI, compliance, international standards and smarter financial decisions for business owners.">
+<meta property="og:title" content="Our Management Team | ARTISAN Chartered Accountants">
+<meta property="og:description" content="ARTISAN Chartered Accountants management team information.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management" class="active">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources" class="active">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management" class="active">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources" class="active"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -119,73 +119,13 @@
 </aside>
 
 <main id="main">
-<section class="masthead band">
-  <span class="band-sweep" aria-hidden="true"></span>
-  <span class="band-edge" aria-hidden="true"></span>
+<section class="management-placeholder section">
   <div class="container">
-    <div class="tile tile-brand masthead-tile">
-      <div class="masthead-grid">
-        <div>
-          <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Resources</span></div>
-          <span class="chip chip-light">Our Resources</span>
-          <h1>Insights for <em>informed decisions.</em></h1>
-        </div>
-        <div class="masthead-note">
-          <p>Practical commentary from our professionals on compliance, technology, risk and financial reporting.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="article-grid">
-      <div>
-        <div class="post-grid">
-          <article class="post-card reveal" data-post-card>
-            <a class="post-thumb" href="post-ai-compliance.html" tabindex="-1" aria-hidden="true"><img src="assets/img/post-ai-compliance.webp" alt="" loading="lazy"></a>
-            <div class="post-body">
-              <div class="post-meta"><span class="tag">Uncategorized</span><span>July 15, 2026</span><span>&middot;</span><span>4 min read</span></div>
-              <h3><a href="post-ai-compliance.html">What Every Business Owner Should Be Watching in 2026: AI, Compliance, and Smarter Financial Decisions</a></h3>
-              <p>What Every Business Owner Should Be Watching in 2026: AI, Compliance, and Smarter Financial Decisions. Running a business has never been more exciting or more challenging. From rapid&hellip;</p>
-              <a class="alink" href="post-ai-compliance.html">Read More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-            </div>
-          </article>
-
-          <article class="post-card reveal" data-post-card data-delay="80">
-            <a class="post-thumb" href="post-international-compliance.html" tabindex="-1" aria-hidden="true"><img src="assets/img/post-international-compliance.webp" alt="" loading="lazy"></a>
-            <div class="post-body">
-              <div class="post-meta"><span class="tag">Uncategorized</span><span>June 25, 2026</span><span>&middot;</span><span>2 min read</span></div>
-              <h3><a href="post-international-compliance.html">Why International Compliance Is Becoming a Competitive Advantage for Businesses</a></h3>
-              <p>Why International Compliance Is Becoming a Competitive Advantage for Businesses. In today&rsquo;s connected economy, businesses are no longer competing only within their own country. Whether you export products,&hellip;</p>
-              <a class="alink" href="post-international-compliance.html">Read More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-            </div>
-          </article>
-        </div>
-        <p data-post-empty style="display:none;margin-top:24px;color:var(--muted)">No posts match your search.</p>
-      </div>
-
-      <aside class="side">
-        <div class="side-box">
-          <h4>Search</h4>
-          <label for="post-search" style="position:absolute;left:-9999px">Search blog posts</label>
-          <input type="search" id="post-search" data-post-search placeholder="Search blog posts">
-        </div>
-        <div class="side-box">
-          <h4>Categories</h4>
-          <ul><li><a href="resources.html">Uncategorized (2)</a></li></ul>
-        </div>
-        <div class="side-box">
-          <h4>Recent Posts</h4>
-          <ul>
-            <li><a href="post-ai-compliance.html">What Every Business Owner Should Be Watching in 2026</a></li>
-            <li><a href="post-international-compliance.html">Why International Compliance Is Becoming a Competitive Advantage</a></li>
-          </ul>
-        </div>
-      </aside>
+    <div class="management-placeholder-card">
+      <span class="chip">Our Management Team</span>
+      <h1>Our <em>management team.</em></h1>
+      <p>Our Management Team page is being prepared. Please check back soon for updates.</p>
+      <a class="btn btn-primary" href="team">Meet Our Partners</a>
     </div>
   </div>
 </section>
@@ -201,9 +141,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -221,17 +161,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What Every Business Owner Should Be Watching in 2026 | ARTISAN Chartered Accountants</title>
-<meta name="description" content="AI, compliance and smarter financial decisions — the trends every business owner should understand in 2026, from ARTISAN Chartered Accountants.">
-<link rel="canonical" href="https://artisan-ca.net/post-ai-compliance.html">
+<title>Team Member Login | ARTISAN Chartered Accountants</title>
+<meta name="description" content="Approved ARTISAN team members can sign in to access and update their team profile information.">
+<link rel="canonical" href="https://artisan-ca.net/team-login">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="What Every Business Owner Should Be Watching in 2026 | ARTISAN Chartered Accountants">
-<meta property="og:description" content="AI, compliance and smarter financial decisions — the trends every business owner should understand in 2026, from ARTISAN Chartered Accountants.">
+<meta property="og:title" content="Team Member Login | ARTISAN Chartered Accountants">
+<meta property="og:description" content="Approved ARTISAN team members can sign in to access and update their team profile information.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -42,7 +42,7 @@
     <div class="header-inner">
       <div class="header-top">
         <div class="brand-lockup">
-          <a class="brand" href="index.html" aria-label="ARTISAN Chartered Accountants — Home">
+          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
@@ -64,22 +64,22 @@
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-nav="home">Home</a>
+      <a href="/" data-nav="home">Home</a>
       <div class="nav-item">
-        <a href="about.html" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="about" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
-          <a href="team.html" data-nav="partners">Our Partners</a>
-          <a href="management.html" data-nav="management">Our Management Team</a>
-          <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision.html#our-values" data-nav="values">Our Values</a>
+          <a href="team" data-nav="partners">Our Partners</a>
+          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+          <a href="vision#our-values" data-nav="values">Our Values</a>
         </div>
       </div>
-      <a href="services.html" data-nav="services">Services</a>
-      <a href="resources.html" data-nav="resources" class="active">Resources</a>
-      <a href="client.html" data-nav="client">Clients</a>
-      <a href="gallery.html" data-nav="gallery">Gallery</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="services" data-nav="services">Services</a>
+      <a href="resources" data-nav="resources">Resources</a>
+      <a href="client" data-nav="client">Clients</a>
+      <a href="gallery" data-nav="gallery">Gallery</a>
+      <a href="contact" data-nav="contact">Contact</a>
         </nav>
         <button type="button" class="header-search" data-modal-open="search" aria-label="Search site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
       </div>
@@ -94,23 +94,23 @@
     <button type="button" class="mp-close" data-nav-close aria-label="Close menu">&times;</button>
   </div>
   <nav>
-    <a href="index.html" data-nav="home"><i>01</i> Home</a>
+    <a href="/" data-nav="home"><i>01</i> Home</a>
     <div class="mp-parent">
-      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <a href="about" data-nav="about"><i>02</i> About</a>
       <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
     </div>
     <div class="mp-sub" data-mp-panel hidden>
-      <a href="team.html" data-nav="partners">Our Partners</a>
-      <a href="management.html" data-nav="management">Our Management Team</a>
-      <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision.html#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision.html#our-values" data-nav="values">Our Values</a>
+      <a href="team" data-nav="partners">Our Partners</a>
+      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
+      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
+      <a href="vision#our-values" data-nav="values">Our Values</a>
     </div>
-    <a href="services.html" data-nav="services"><i>03</i> Services</a>
-    <a href="resources.html" data-nav="resources" class="active"><i>04</i> Resources</a>
-    <a href="client.html" data-nav="client"><i>05</i> Clients</a>
-    <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
-    <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
+    <a href="services" data-nav="services"><i>03</i> Services</a>
+    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
+    <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
+    <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
   <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
@@ -126,13 +126,9 @@
     <div class="tile tile-brand masthead-tile">
       <div class="masthead-grid">
         <div>
-          <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="resources.html">Blog</a><span>/</span><span>Uncategorized</span></div>
-          <span class="chip chip-light">Uncategorized</span>
-          <h1 style="font-size:clamp(1.8rem,3.3vw,2.9rem)">What Every Business Owner Should Be Watching in 2026: AI, Compliance, and Smarter Financial Decisions</h1>
-        </div>
-        <div class="masthead-note">
-          <p style="margin-bottom:8px"><strong>Marif Safin</strong></p>
-          <p class="mb-0">July 15, 2026 &middot; 4 min read</p>
+          <div class="crumbs"><a href="/">Home</a><span>/</span><span>Team Member Login</span></div>
+          <span class="chip chip-light">Member Login</span>
+          <h1 style="font-size:clamp(2rem,3.6vw,3rem)">Access your <em>team profile</em></h1>
         </div>
       </div>
     </div>
@@ -140,130 +136,23 @@
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="article-grid">
-      <div class="article-panel reveal">
-        <figure class="article-figure"><img src="assets/img/post-ai-compliance.webp" alt="" loading="lazy"></figure>
-        <div class="article">
-          <p class="lead">Running a business has never been more exciting or more challenging.</p>
-          <p>From rapid advances in Artificial Intelligence (AI) to changing tax regulations, global economic uncertainty, and increasing digital compliance requirements, business owners today are expected to make faster and more informed decisions than ever before.</p>
-          <p>At ARTISAN Chartered Accountants, we believe that success is no longer determined solely by how much profit a business earns. It depends on how well a business manages risk, adapts to change, and makes strategic decisions based on reliable financial information.</p>
-          <p>Here are some of the most important trends every business owner should understand in 2026.</p>
-
-          <h2>1. AI is becoming a Business Tool, not just a Buzzword</h2>
-          <p>Artificial Intelligence is no longer reserved for large multinational companies. Businesses of every size are beginning to use AI to improve productivity and reduce costs.</p>
-          <p>Some practical applications include:</p>
-          <ul>
-            <li>Automating bookkeeping and data entry</li>
-            <li>Preparing financial reports faster</li>
-            <li>Improving customer service through AI assistants</li>
-            <li>Analyzing sales trends and forecasting cash flow</li>
-            <li>Managing documents and compliance records</li>
-          </ul>
-          <p>However, AI should not replace professional judgement. Financial reporting, taxation, auditing, and strategic planning still require experienced professionals who understand regulations, business risks, and industry practices.</p>
-          <p>The businesses that combine AI with qualified professional advice will likely gain the greatest competitive advantage.</p>
-
-          <h2>2. Financial Compliance Is Becoming More Digital</h2>
-          <p>Tax authorities and regulators around the world are increasingly relying on digital systems to improve transparency and reduce fraud.</p>
-          <p>Businesses should expect greater emphasis on:</p>
-          <ul>
-            <li>Digital accounting records</li>
-            <li>Proper documentation</li>
-            <li>Timely tax and VAT compliance</li>
-            <li>Electronic invoicing</li>
-            <li>Internal controls and audit trails</li>
-          </ul>
-          <p>Maintaining accurate records is no longer just good practice &mdash; it has become essential for business continuity and regulatory compliance.</p>
-
-          <h2>3. Cash Flow Is More Important Than Ever</h2>
-          <p>Many profitable businesses still experience financial stress because they fail to manage cash flow effectively.</p>
-          <p>Business owners should regularly monitor:</p>
-          <ul>
-            <li>Outstanding customer receivables</li>
-            <li>Supplier payment schedules</li>
-            <li>Inventory levels</li>
-            <li>Loan obligations</li>
-            <li>Monthly operating expenses</li>
-          </ul>
-          <p>Preparing a monthly cash flow forecast allows management to identify potential shortages before they become serious problems.</p>
-          <p class="pull">Remember, profit is an accounting figure. Cash is what keeps a business operating.</p>
-
-          <h2>4. Strong Financial Information Leads to Better Decisions</h2>
-          <p>Whether you are planning to expand your business, obtain bank financing, attract investors, or enter a new market, reliable financial information is critical.</p>
-          <p>Management should have access to:</p>
-          <ul>
-            <li>Monthly financial statements</li>
-            <li>Budget versus actual analysis</li>
-            <li>Key performance indicators (KPIs)</li>
-            <li>Business dashboards</li>
-            <li>Industry benchmarking</li>
-          </ul>
-          <p>Good decisions begin with good information.</p>
-
-          <h2>5. Risk Management Is No Longer Optional</h2>
-          <p>Today&rsquo;s business environment changes quickly.</p>
-          <p>Businesses should regularly evaluate risks such as:</p>
-          <ul>
-            <li>Cybersecurity threats</li>
-            <li>Fraud</li>
-            <li>Foreign exchange fluctuations</li>
-            <li>Supply chain disruptions</li>
-            <li>Regulatory changes</li>
-            <li>Data privacy obligations</li>
-          </ul>
-          <p>Even small businesses benefit from simple internal controls that reduce the likelihood of financial loss.</p>
-
-          <h2>6. Professional Advice Creates Long-Term Value</h2>
-          <p>Many business owners contact accountants only during tax season or at year-end. In reality, your accountant can become one of your most valuable business advisers throughout the year.</p>
-          <p>Professional advisers can assist with:</p>
-          <ul>
-            <li>Business planning</li>
-            <li>Tax planning</li>
-            <li>Financial modelling</li>
-            <li>Budget preparation</li>
-            <li>Internal controls</li>
-            <li>Risk management</li>
-            <li>Business valuation</li>
-            <li>Investment decisions</li>
-            <li>Regulatory compliance</li>
-          </ul>
-          <p>Working proactively often saves significantly more money than fixing problems after they occur.</p>
-
-          <h2>Looking Ahead</h2>
-          <p>The business landscape will continue to evolve. Technologies will improve, regulations will change, and markets will remain competitive.</p>
-          <p>Businesses that invest in accurate financial information, adopt technology wisely, maintain strong governance, and seek professional advice will be better positioned for sustainable growth.</p>
-          <p>At ARTISAN Chartered Accountants, our goal is not simply to prepare financial statements or complete compliance work. We partner with businesses to help them make informed decisions, manage risk, improve performance, and build long-term value.</p>
-          <p>Whether you are a startup, SME, multinational company, NGO, or family-owned business, our team is committed to providing practical solutions tailored to your needs.</p>
-          <p class="article-sign">&ndash; Marif Safin (CISA)</p>
+  <div class="container auth">
+    <div class="auth-card reveal">
+      <h2 style="font-size:1.5rem">Member Login</h2>
+      <p style="color:var(--muted);font-size:.94rem;margin-bottom:24px">Approved team members can login and update their profile information from the WordPress admin menu.</p>
+      <form data-form data-no-mail data-subject="Team member login request" data-pending="The team member area needs to be connected to your server before login works. Please contact the firm at info@artisancabd.com." novalidate>
+        <div class="hp-field"><label for="l-site">Website</label><input type="text" id="l-site" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="form-grid">
+          <div class="field is-full"><label for="l-user">Username or Email</label><input type="text" id="l-user" name="username" required></div>
+          <div class="field is-full"><label for="l-pass">Password</label><input type="password" id="l-pass" name="password" required></div>
+          <div class="field is-full">
+            <label class="checkbox"><input type="checkbox" name="remember"> Remember me</label>
+          </div>
         </div>
-
-        <div class="callout">
-          <h3>Need Professional Guidance?</h3>
-          <p>If your business requires assistance with audit and assurance, accounting, taxation, VAT, financial reporting, internal controls, business valuation, or strategic financial advisory services, our team is ready to help.</p>
-          <p>ARTISAN Chartered Accountants combines technical expertise with practical business insight to help organisations navigate change with confidence.</p>
-          <p><strong>Because informed decisions build stronger businesses.</strong></p>
-          <a class="btn btn-primary" href="contact.html" style="margin-top:8px">Contact Us
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-        </div>
-      </div>
-
-      <aside class="side">
-        <div class="side-box">
-          <h4>Categories</h4>
-          <ul><li><a href="resources.html">Uncategorized (2)</a></li></ul>
-        </div>
-        <div class="side-box">
-          <h4>Related Posts</h4>
-          <ul>
-            <li><a href="post-international-compliance.html">Why International Compliance Is Becoming a Competitive Advantage for Businesses</a><br><span style="font-size:.82rem;color:var(--muted)">June 25, 2026</span></li>
-          </ul>
-        </div>
-        <div class="side-box">
-          <h4>Talk to us</h4>
-          <p style="font-size:.92rem">Request a scope and quotation for your engagement.</p>
-          <button type="button" class="btn btn-primary btn-sm btn-block" data-modal-open>Request an Offer</button>
-        </div>
-      </aside>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:16px">Login</button>
+        <p class="form-status" data-form-status role="status"></p>
+      </form>
+      <p class="auth-alt">Need a team account? <a href="team-register">Register here</a></p>
     </div>
   </div>
 </section>
@@ -279,9 +168,9 @@
           <p>Connect with ARTISAN Chartered Accountants for audit, tax, advisory, and professional accounting support.</p>
         </div>
         <div class="actions">
-          <a class="btn btn-white" href="contact.html">Contact Us
+          <a class="btn btn-white" href="contact">Contact Us
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services.html">View Services</a>
+          <a class="btn btn-glass" href="services">View Services</a>
         </div>
       </div>
     </div>
@@ -299,17 +188,17 @@
       <div>
         <h4>Company</h4>
         <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="career">Career</a></li>
+          <li><a href="sitemap">Sitemap</a></li>
         </ul>
       </div>
 
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="terms-of-reference.html">Terms of Reference</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="terms-of-reference">Terms of Reference</a></li>
         </ul>
       </div>
 
