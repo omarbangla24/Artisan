@@ -307,6 +307,9 @@
           setStatus(form, res.message || form.getAttribute('data-success') ||
             'Thank you — your message has been received.', false);
           form.reset();
+        } else if (res && res.fallback) {
+          /* Backend not configured yet — compose an email instead. */
+          mailtoFallback(form, subject);
         } else {
           setStatus(form, (res && res.message) ||
             'Sorry, something went wrong. Please email ' + MAIL_TO + '.', true);

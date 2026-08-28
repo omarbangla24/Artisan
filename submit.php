@@ -9,17 +9,18 @@ declare(strict_types=1);
 header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
 
-function reply(bool $ok, string $msg, int $code = 200): never {
+function reply(bool $ok, string $msg, int $code = 200, array $extra = []): never {
     http_response_code($code);
-    echo json_encode(['ok' => $ok, 'message' => $msg]);
+    echo json_encode(['ok' => $ok, 'message' => $msg] + $extra);
     exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') reply(false, 'Method not allowed.', 405);
 
 // ---- load backend (reuse admin core, no session) -------------------------
+// If the DB backend isn't configured yet, tell the client to fall back to email.
 $cfg = __DIR__ . '/admin/config.php';
-if (!is_file($cfg)) reply(false, 'Server not configured.', 500);
+if (!is_file($cfg)) reply(false, 'Backend not configured yet.', 503, ['fallback' => true]);
 require $cfg;
 require __DIR__ . '/admin/inc/helpers.php';
 require __DIR__ . '/admin/inc/db.php';
@@ -42,7 +43,7 @@ try {
     db(); db_migrate();
 } catch (Throwable $e) {
     error_log('submit db: ' . $e->getMessage());
-    reply(false, 'Temporarily unavailable. Please email us directly.', 500);
+    reply(false, 'Temporarily unavailable.', 503, ['fallback' => true]);
 }
 
 // ---- rate limit: max 8 per IP per hour -----------------------------------
