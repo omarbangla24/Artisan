@@ -7,6 +7,9 @@ DirectoryIndex index.php
 # Leave the admin panel to its own rules (it keeps normal .php URLs)
 RewriteRule ^admin/ - [L]
 
+# Merged page: old /enlistment now lives under /affiliation
+RewriteRule ^enlistment/?$ /affiliation#enlistment [R=301,L]
+
 # 1) If someone requests /page.php or /page.html directly, 301 to the clean /page
 RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.(php|html)[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]

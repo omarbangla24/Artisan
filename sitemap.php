@@ -73,8 +73,7 @@
           <a href="team" data-nav="partners">Our Partners</a>
           <a href="management" data-nav="management">Our Team</a>
           <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
-          <a href="affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
-          <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
+          <a href="affiliation" data-nav="affiliation">Affiliation &amp; Enlistment</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
@@ -105,8 +104,7 @@
       <a href="team" data-nav="partners">Our Partners</a>
       <a href="management" data-nav="management">Our Team</a>
       <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
-      <a href="affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
-      <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
+      <a href="affiliation" data-nav="affiliation">Affiliation &amp; Enlistment</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
     <a href="resources" data-nav="resources"><i>04</i> Resources</a>
@@ -154,13 +152,8 @@
       </article>
 
       <article class="sitemap-card reveal" data-delay="120">
-        <h3><a href="affiliation">Affiliation &amp; Membership</a></h3>
-        <p>The professional accountancy bodies our partners are affiliated with through membership and certification, including ICAB, ICSB and IPA Australia.</p>
-      </article>
-
-      <article class="sitemap-card reveal">
-        <h3><a href="enlistment">Enlistment of the Firm</a></h3>
-        <p>The regulatory bodies with which the firm is enlisted, including FRC, BSEC, IDRA, the NGO Affairs Bureau and MRA.</p>
+        <h3><a href="affiliation">Affiliation &amp; Enlistment</a></h3>
+        <p>Our partners&rsquo; professional affiliations and memberships (ICAB, ICSB, IPA Australia) and the regulatory bodies the firm is enlisted with (FRC, BSEC, IDRA, NGO Affairs Bureau, MRA).</p>
       </article>
 
       <article class="sitemap-card reveal" data-delay="120">

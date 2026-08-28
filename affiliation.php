@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Affiliation &amp; Membership | ARTISAN Chartered Accountants</title>
-<meta name="description" content="Professional affiliations, memberships and certifications held by the partners of ARTISAN Chartered Accountants.">
+<title>Affiliation &amp; Enlistment | ARTISAN Chartered Accountants</title>
+<meta name="description" content="Professional affiliations and memberships of the partners, and the regulatory bodies with which ARTISAN Chartered Accountants is enlisted.">
 <link rel="canonical" href="https://artisan-ca.net/affiliation">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Affiliation &amp; Membership | ARTISAN Chartered Accountants">
-<meta property="og:description" content="Professional affiliations, memberships and certifications held by the partners of ARTISAN Chartered Accountants.">
+<meta property="og:title" content="Affiliation &amp; Enlistment | ARTISAN Chartered Accountants">
+<meta property="og:description" content="Professional affiliations and memberships of the partners, and the regulatory bodies with which ARTISAN Chartered Accountants is enlisted.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -30,6 +30,7 @@
 .reg-hero-inner h1 em{color:var(--brand-300);font-style:normal}
 .reg-hero-inner p{color:rgba(255,255,255,.85);font-size:1.06rem;line-height:1.7;max-width:640px;margin:0}
 .reg-section{padding-top:clamp(38px,5vw,68px)}
+.reg-section-alt{margin-top:clamp(38px,5vw,68px);background:var(--brand-50);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .reg-wrap{display:grid;grid-template-columns:.85fr 1.4fr;gap:clamp(28px,4vw,64px);align-items:start}
 @media(max-width:900px){.reg-wrap{grid-template-columns:1fr;gap:26px}}
 .reg-aside{position:sticky;top:calc(var(--header-h) + 18px)}
@@ -106,8 +107,7 @@
           <a href="team" data-nav="partners">Our Partners</a>
           <a href="management" data-nav="management">Our Team</a>
           <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
-          <a href="affiliation" data-nav="affiliation" class="active">Affiliation &amp; Membership</a>
-          <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
+          <a href="affiliation" data-nav="affiliation" class="active">Affiliation &amp; Enlistment</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
@@ -138,8 +138,7 @@
       <a href="team" data-nav="partners">Our Partners</a>
       <a href="management" data-nav="management">Our Team</a>
       <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
-      <a href="affiliation" data-nav="affiliation" class="active">Affiliation &amp; Membership</a>
-      <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
+      <a href="affiliation" data-nav="affiliation" class="active">Affiliation &amp; Enlistment</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
     <a href="resources" data-nav="resources"><i>04</i> Resources</a>
@@ -158,16 +157,16 @@
   <div class="container">
     <div class="tile tile-brand reg-hero-tile reveal">
       <div class="reg-hero-inner">
-        <div class="crumbs"><a href="/">Home</a><span>/</span><a href="about">About</a><span>/</span><span>Affiliation &amp; Membership</span></div>
+        <div class="crumbs"><a href="/">Home</a><span>/</span><a href="about">About</a><span>/</span><span>Affiliation &amp; Enlistment</span></div>
         <span class="chip chip-light">About the Firm</span>
-        <h1>Affiliation <em>&amp; membership.</em></h1>
-        <p>Our partners are involved, through membership and/or certification, with leading professional accountancy bodies at home and abroad.</p>
+        <h1>Affiliation <em>&amp; enlistment.</em></h1>
+        <p>The professional bodies our partners are affiliated with, and the regulatory authorities with which the firm is enlisted.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section reg-section">
+<section class="section reg-section" id="affiliation">
   <div class="container">
     <div class="reg-wrap">
       <aside class="reg-aside reveal">
@@ -180,6 +179,26 @@
         <li class="reg-row"><span class="reg-num">01</span><span class="reg-badge">ICAB</span><span class="reg-name">Institute of Chartered Accountants of Bangladesh</span></li>
         <li class="reg-row"><span class="reg-num">02</span><span class="reg-badge">ICSB</span><span class="reg-name">Institute of Company Secretaries of Bangladesh</span></li>
         <li class="reg-row"><span class="reg-num">03</span><span class="reg-badge">IPA Australia</span><span class="reg-name">Institute of Public Accountants</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section reg-section reg-section-alt" id="enlistment">
+  <div class="container">
+    <div class="reg-wrap">
+      <aside class="reg-aside reveal">
+        <span class="reg-kicker">Enlistment with Regulatory Bodies</span>
+        <h2>Recognised by the <em>regulators.</em></h2>
+        <p>We are enlisted with the following organizations / regulatory body.</p>
+        <div class="reg-count"><strong>05</strong><span>Regulatory&nbsp;bodies</span></div>
+      </aside>
+      <ol class="reg-list reveal" data-delay="80">
+        <li class="reg-row"><span class="reg-num">01</span><span class="reg-badge">FRC</span><span class="reg-name">Financial Reporting Council</span></li>
+        <li class="reg-row"><span class="reg-num">02</span><span class="reg-badge">BSEC</span><span class="reg-name">Bangladesh Securities and Exchange Commission</span></li>
+        <li class="reg-row"><span class="reg-num">03</span><span class="reg-badge">IDRA</span><span class="reg-name">Insurance Development &amp; Regulatory Authority</span></li>
+        <li class="reg-row"><span class="reg-num">04</span><span class="reg-badge">NGOAB</span><span class="reg-name">NGO Affairs Bureau</span></li>
+        <li class="reg-row"><span class="reg-num">05</span><span class="reg-badge">MRA</span><span class="reg-name">Microcredit Regulatory Authority</span></li>
       </ol>
     </div>
   </div>
