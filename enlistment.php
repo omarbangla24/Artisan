@@ -18,6 +18,39 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css?v=1787765548">
+<style>
+/* Register layout — Affiliation & Enlistment */
+.reg-hero{padding:clamp(24px,5vw,52px) 0 0}
+.reg-hero-tile{padding:clamp(34px,5vw,66px)}
+.reg-hero-inner{max-width:780px}
+.reg-hero-inner .crumbs{margin-bottom:16px}
+.reg-hero-inner .crumbs a,.reg-hero-inner .crumbs span{color:rgba(255,255,255,.72)}
+.reg-hero-inner .crumbs a:hover{color:#fff}
+.reg-hero-inner h1{color:#fff;margin:16px 0 18px;font-size:clamp(2.15rem,5vw,3.5rem);line-height:1.04}
+.reg-hero-inner h1 em{color:var(--brand-300);font-style:normal}
+.reg-hero-inner p{color:rgba(255,255,255,.85);font-size:1.06rem;line-height:1.7;max-width:640px;margin:0}
+.reg-section{padding-top:clamp(38px,5vw,68px)}
+.reg-wrap{display:grid;grid-template-columns:.85fr 1.4fr;gap:clamp(28px,4vw,64px);align-items:start}
+@media(max-width:900px){.reg-wrap{grid-template-columns:1fr;gap:26px}}
+.reg-aside{position:sticky;top:calc(var(--header-h) + 18px)}
+@media(max-width:900px){.reg-aside{position:static}}
+.reg-kicker{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:14px}
+.reg-aside h2{font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.12;margin:0 0 16px}
+.reg-aside h2 em{color:var(--brand);font-style:normal}
+.reg-aside p{color:var(--muted);line-height:1.72;margin:0 0 24px}
+.reg-count{display:inline-flex;align-items:baseline;gap:11px;padding:15px 22px;border:1px solid var(--line);border-radius:var(--r);background:var(--brand-50)}
+.reg-count strong{font-family:var(--display);font-size:1.9rem;color:var(--brand);line-height:1}
+.reg-count span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.reg-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.reg-row{position:relative;display:flex;align-items:center;gap:clamp(16px,2.4vw,30px);padding:clamp(20px,2.6vw,30px) 8px clamp(20px,2.6vw,30px) 24px;border-bottom:1px solid var(--line);transition:background .25s,transform .25s}
+.reg-row::before{content:"";position:absolute;left:0;top:15px;bottom:15px;width:3px;border-radius:3px;background:var(--brand-100);transition:.25s}
+.reg-row:hover{background:var(--brand-50)}
+.reg-row:hover::before{background:var(--brand);top:9px;bottom:9px}
+.reg-num{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.25rem);color:var(--brand-100);min-width:2.4ch;line-height:1;letter-spacing:-.02em}
+.reg-badge{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:92px;padding:9px 15px;border:1px solid var(--brand-100);border-radius:var(--r-full);background:var(--paper);color:var(--brand-600);font-weight:700;font-size:.78rem;letter-spacing:.04em;text-align:center}
+.reg-name{font-family:var(--display);font-weight:600;font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.35;color:var(--ink)}
+@media(max-width:520px){.reg-row{flex-wrap:wrap;gap:12px}.reg-num{font-size:1.4rem;min-width:auto}.reg-name{flex:1 1 100%;order:3}}
+</style>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -121,58 +154,35 @@
 </aside>
 
 <main id="main">
-<section class="masthead band">
-  <span class="band-sweep" aria-hidden="true"></span>
-  <span class="band-edge" aria-hidden="true"></span>
+<section class="reg-hero">
   <div class="container">
-    <div class="tile tile-brand masthead-tile">
-      <div class="masthead-grid">
-        <div>
-          <div class="crumbs"><a href="/">Home</a><span>/</span><a href="about">About</a><span>/</span><span>Enlistment of the Firm</span></div>
-          <span class="chip chip-light">About the Firm</span>
-          <h1>Enlistment <em>of the firm.</em></h1>
-        </div>
-        <div class="masthead-note">
-          <p>ARTISAN is enlisted with the country&rsquo;s principal financial, securities, insurance and development regulators.</p>
-        </div>
+    <div class="tile tile-brand reg-hero-tile reveal">
+      <div class="reg-hero-inner">
+        <div class="crumbs"><a href="/">Home</a><span>/</span><a href="about">About</a><span>/</span><span>Enlistment of the Firm</span></div>
+        <span class="chip chip-light">About the Firm</span>
+        <h1>Enlistment <em>of the firm.</em></h1>
+        <p>ARTISAN is enlisted with the country&rsquo;s principal financial, securities, insurance and development regulators.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section reg-section">
   <div class="container">
-    <div class="head">
-      <div class="reveal">
-        <span class="chip">Enlistment with Regulatory Bodies</span>
+    <div class="reg-wrap">
+      <aside class="reg-aside reveal">
+        <span class="reg-kicker">Enlistment with Regulatory Bodies</span>
         <h2>Recognised by the <em>regulators.</em></h2>
-      </div>
-      <div class="head-note reveal" data-delay="80">
-        <p class="mb-0">We are enlisted with the following organizations / regulatory body:</p>
-      </div>
-    </div>
-
-    <div class="contact-grid" style="margin-top:var(--gap)">
-      <article class="pcard reveal">
-        <span class="role">FRC</span>
-        <h3>Financial Reporting Council</h3>
-      </article>
-      <article class="pcard reveal" data-delay="60">
-        <span class="role">BSEC</span>
-        <h3>Bangladesh Securities and Exchange Commission</h3>
-      </article>
-      <article class="pcard reveal" data-delay="120">
-        <span class="role">IDRA</span>
-        <h3>Insurance Development &amp; Regulatory Authority</h3>
-      </article>
-      <article class="pcard reveal">
-        <span class="role">NGOAB</span>
-        <h3>NGO Affairs Bureau</h3>
-      </article>
-      <article class="pcard reveal" data-delay="60">
-        <span class="role">MRA</span>
-        <h3>Microcredit Regulatory Authority</h3>
-      </article>
+        <p>We are enlisted with the following organizations / regulatory body.</p>
+        <div class="reg-count"><strong>05</strong><span>Regulatory&nbsp;bodies</span></div>
+      </aside>
+      <ol class="reg-list reveal" data-delay="80">
+        <li class="reg-row"><span class="reg-num">01</span><span class="reg-badge">FRC</span><span class="reg-name">Financial Reporting Council</span></li>
+        <li class="reg-row"><span class="reg-num">02</span><span class="reg-badge">BSEC</span><span class="reg-name">Bangladesh Securities and Exchange Commission</span></li>
+        <li class="reg-row"><span class="reg-num">03</span><span class="reg-badge">IDRA</span><span class="reg-name">Insurance Development &amp; Regulatory Authority</span></li>
+        <li class="reg-row"><span class="reg-num">04</span><span class="reg-badge">NGOAB</span><span class="reg-name">NGO Affairs Bureau</span></li>
+        <li class="reg-row"><span class="reg-num">05</span><span class="reg-badge">MRA</span><span class="reg-name">Microcredit Regulatory Authority</span></li>
+      </ol>
     </div>
   </div>
 </section>
