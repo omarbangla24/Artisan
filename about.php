@@ -277,16 +277,16 @@
     <div class="head">
       <div class="reveal">
         <span class="chip">Memberships</span>
-        <h2>Associations &amp; enlistments.</h2>
+        <h2>Affiliation &amp; enlistments.</h2>
       </div>
       <div class="head-note reveal" data-delay="80">
-        <p class="mb-0">The professional bodies we are associated with, and the organizations we are enlisted with.</p>
+        <p class="mb-0">The professional bodies we are affiliated with, and the organizations we are enlisted with.</p>
       </div>
     </div>
     <div class="split" style="margin-top:var(--gap)">
       <div class="tile split-6 reveal">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
-          <span class="chip">Associations</span>
+          <span class="chip">Affiliation</span>
           <span class="rail-badge" style="margin:0 0 20px">12</span>
         </div>
         <ul class="ticks">
