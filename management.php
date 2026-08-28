@@ -72,9 +72,7 @@
         <div class="nav-dropdown">
           <a href="team" data-nav="partners">Our Partners</a>
           <a href="management" data-nav="management" class="active">Our Management Team</a>
-          <a href="vision#our-vision" data-nav="vision">Our Vision</a>
-          <a href="vision#our-mission" data-nav="mission">Our Mission</a>
-          <a href="vision#our-values" data-nav="values">Our Values</a>
+          <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
@@ -104,9 +102,7 @@
     <div class="mp-sub" data-mp-panel hidden>
       <a href="team" data-nav="partners">Our Partners</a>
       <a href="management" data-nav="management" class="active">Our Management Team</a>
-      <a href="vision#our-vision" data-nav="vision">Our Vision</a>
-      <a href="vision#our-mission" data-nav="mission">Our Mission</a>
-      <a href="vision#our-values" data-nav="values">Our Values</a>
+      <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
     <a href="resources" data-nav="resources"><i>04</i> Resources</a>
