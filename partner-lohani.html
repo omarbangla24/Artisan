@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=1787748610">
+<link rel="stylesheet" href="assets/css/style.css?v=1787765548">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -48,14 +48,15 @@
           <span class="brand-rule" aria-hidden="true"></span>
           <p class="brand-tagline">Audit. Tax. Consulting.<br>Wealth Management.</p>
           <span class="brand-rule" aria-hidden="true"></span>
-          <svg class="brand-anniversary" viewBox="0 0 208 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 50 years">
-            <text class="am-digit" x="-2" y="110">5</text>
-            <path class="am-ring" d="M181.6 29.7 A52 52 0 1 0 181.6 86.3"></path>
-            <text class="am-years" x="106" y="72">years</text>
+          <svg class="brand-anniversary" viewBox="0 0 250 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 50th year">
+            <text class="am-digit" x="-2" y="112">5</text>
+            <path class="am-ring" d="M181.6 29.7 A52 52 0 1 0 181.6 86.3" transform="translate(140 60) scale(1.14) translate(-140 -60)"></path>
+            <text class="am-th" x="92" y="74">th</text>
+            <text class="am-years" x="140" y="74">year</text>
           </svg>
         </div>
         <div class="header-utility">
-          <button type="button" data-modal-open>Get a Quotation</button>
+          <button type="button" data-modal-open>Get an Offer</button>
           <span class="util-sep" aria-hidden="true"></span>
           <button type="button" data-modal-open="subscribe">Subscribe</button>
           <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
@@ -94,8 +95,11 @@
   </div>
   <nav>
     <a href="index.html" data-nav="home"><i>01</i> Home</a>
-    <a href="about.html" data-nav="about"><i>02</i> About</a>
-    <div class="mp-sub">
+    <div class="mp-parent">
+      <a href="about.html" data-nav="about"><i>02</i> About</a>
+      <button type="button" class="mp-caret" data-mp-toggle aria-expanded="false" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+    </div>
+    <div class="mp-sub" data-mp-panel hidden>
       <a href="team.html" data-nav="partners">Our Partners</a>
       <a href="management.html" data-nav="management">Our Management Team</a>
       <a href="vision.html#our-vision" data-nav="vision">Our Vision</a>
@@ -108,10 +112,9 @@
     <a href="gallery.html" data-nav="gallery"><i>06</i> Gallery</a>
     <a href="contact.html" data-nav="contact"><i>07</i> Contact</a>
   </nav>
-  <button type="button" class="btn btn-primary btn-block" data-modal-open>Request Quotation</button>
+  <button type="button" class="btn btn-primary btn-block" data-modal-open>Request an Offer</button>
   <div class="mp-meta">
     <a href="mailto:info@artisancabd.com">info@artisancabd.com</a>
-    <a href="tel:+8801828663354">+8801828-663354</a>
   </div>
 </aside>
 
@@ -125,7 +128,7 @@
         <div>
           <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="team.html">Our Partners</a><span>/</span><span>Md. A M Khan Lohani FCA</span></div>
           <span class="chip chip-light">Senior Partner</span>
-          <h1 style="font-size:clamp(2rem,3.6vw,3.1rem)">Md. A M Khan Lohani FCA</h1>
+          <h1 class="masthead-name" style="font-size:clamp(2rem,3.6vw,3.1rem)">Md. A M Khan Lohani FCA</h1>
         </div>
       </div>
     </div>
@@ -248,24 +251,63 @@
   <div class="modal-backdrop" data-modal-close></div>
   <div class="modal-dialog">
     <button type="button" class="modal-close" data-modal-close aria-label="Close">&times;</button>
-    <span class="chip">Consultation / Quotation</span>
-    <h3 id="quote-title">Contact For Consultation / Quotation</h3>
-    <p class="modal-sub">Share the details of your requirement and our partners&rsquo; team will respond with a scope and quotation.</p>
-    <form data-form data-subject="Consultation / Quotation request" novalidate>
+    <span class="chip">Consultation / Offer</span>
+    <h3 id="quote-title">Contact For Consultation / Offer</h3>
+    <p class="modal-sub">Share the details of your requirement and our partners&rsquo; team will respond with a scope and offer letter.</p>
+    <form data-form data-subject="Consultation / Offer request" novalidate>
       <div class="hp-field"><label for="q-site">Website</label><input type="text" id="q-site" name="website" tabindex="-1" autocomplete="off"></div>
       <div class="form-grid">
         <div class="field">
           <label for="q-category">Service Category</label>
           <select id="q-category" name="category">
             <option value="">Choose Service Category</option>
-            <option>Audit &amp; Assurance</option>
-            <option>Taxation Services</option>
-            <option>Business Advisory &amp; Consultancy</option>
-            <option>Business Process Outsourcing</option>
-            <option>Risk and Advisory Services</option>
+            <option>Corporate Governance Audit</option>
+            <option>Management Audit</option>
+            <option>Performance Audit</option>
+            <option>Due Diligence</option>
+            <option>Feasibility Studies</option>
+            <option>Transfer Pricing</option>
+            <option>Accounting services</option>
+            <option>Inventory Valuation &amp; Stock Taking</option>
+            <option>Internal Audit &amp; External audit system procedural manual</option>
+            <option>Company Formation and incorporation Acquisition and take over</option>
+            <option>Company Affairs &amp; Corporate Laws</option>
+            <option>Corporate Restructuring/Merger</option>
+            <option>Accounting, financial management system</option>
+            <option>RJSC related works, i.e., Annual Return, Share transfer, etc.</option>
+            <option>Winding up &amp; Liquidation</option>
+            <option>Investigation &amp; Dispute Analysis</option>
+            <option>Business/Assets Valuation Services</option>
+            <option>Management Control System development &amp; implementation supports</option>
           </select>
         </div>
-        <div class="field"><label for="q-type">Service Type</label><input type="text" id="q-type" name="service_type" placeholder="e.g. Statutory audit"></div>
+        <div class="field"><label for="q-type">Industries/Sectors</label>
+          <select id="q-type" name="industry_sector">
+            <option value="">Choose Industry / Sector</option>
+            <option>Government Organizations</option>
+            <option>Grants and Projects</option>
+            <option>NGOs, Charities and Foundation</option>
+            <option>Bank and Financial Institutions</option>
+            <option>Manufacturing Organizations</option>
+            <option>Textile &amp; Garments Industries</option>
+            <option>Insurance Companies</option>
+            <option>Real Estates &amp; Development</option>
+            <option>Food &amp; Beverages</option>
+            <option>Leather &amp; Tannery</option>
+            <option>Paper &amp; Board</option>
+            <option>Embassy and Agencies</option>
+            <option>Tours and Travels</option>
+            <option>Non-profit-making organization</option>
+            <option>Hotels and Hospitality</option>
+            <option>Health Care &amp; Hospitals</option>
+            <option>Allied and Engineering</option>
+            <option>Energy, Gas and Power</option>
+            <option>Telecommunication and Networks</option>
+            <option>Institutions, Clubs &amp; Associations</option>
+            <option>Transportation, Communication &amp; Airlines</option>
+            <option>Information Technology</option>
+          </select>
+        </div>
         <div class="field"><label for="q-year">Financial Year</label><input type="text" id="q-year" name="financial_year" placeholder="e.g. 2025–2026"></div>
         <div class="field"><label for="q-designation">Designation</label><input type="text" id="q-designation" name="designation"></div>
         <div class="field"><label for="q-name">Contact Person Name <span class="req">*</span></label><input type="text" id="q-name" name="contact_name" required></div>
@@ -321,6 +363,6 @@
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
 </button>
 
-<script src="assets/js/main.js?v=1787740850" defer></script>
+<script src="assets/js/main.js?v=1787765548" defer></script>
 </body>
 </html>

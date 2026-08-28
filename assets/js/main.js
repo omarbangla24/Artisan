@@ -24,6 +24,36 @@
     a.addEventListener('click', function () { setNav(false); });
   });
 
+  /* Collapsible submenu(s) inside the mobile panel */
+  Array.prototype.forEach.call(doc.querySelectorAll('[data-mp-toggle]'), function (btn) {
+    var parent = btn.closest ? btn.closest('.mp-parent') : btn.parentNode;
+    var panel = parent ? parent.nextElementSibling : null;
+    if (!panel) return;
+    function setOpen(open) {
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.hidden = !open;
+    }
+    btn.addEventListener('click', function () {
+      setOpen(btn.getAttribute('aria-expanded') !== 'true');
+    });
+    /* Open automatically when the current page lives inside this submenu */
+    if (panel.querySelector('a.active')) setOpen(true);
+  });
+
+  /* ---------- Client logos: show the company name until a logo file exists ---------- */
+  Array.prototype.forEach.call(doc.querySelectorAll('.client-logo img'), function (img) {
+    function fallback() {
+      if (!img.parentNode) return;
+      var span = doc.createElement('span');
+      span.className = 'client-logo-name';
+      span.textContent = img.getAttribute('alt') || '';
+      img.parentNode.appendChild(span);
+      img.remove();
+    }
+    img.addEventListener('error', fallback);
+    if (img.complete && img.naturalWidth === 0) fallback();
+  });
+
   /* ---------- Sticky header shadow + back to top ---------- */
   var header = doc.querySelector('[data-header]');
   var toTop = doc.querySelector('[data-to-top]');

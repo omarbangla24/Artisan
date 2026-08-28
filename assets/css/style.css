@@ -166,9 +166,10 @@ strong,b{font-weight:600;color:var(--ink)}
 /* 50-years anniversary mark — bold numeral, the 0 as a thick open ring,
    "years" set in black inside the ring's opening (matching the 50-years logo) */
 .brand-anniversary{height:33px;width:auto;flex:none;overflow:visible}
-.am-digit{font-family:var(--display);font-weight:800;font-size:146px;letter-spacing:-.03em;fill:var(--brand-700)}
+.am-digit{font-family:var(--display);font-weight:800;font-size:164px;letter-spacing:-.03em;fill:var(--brand-700)}
 .am-ring{fill:none;stroke:var(--brand-700);stroke-width:15;stroke-linecap:round}
 .am-years{font-family:var(--sans);font-weight:500;font-size:43px;letter-spacing:-.01em;fill:var(--ink)}
+.am-th{font-family:var(--sans);font-weight:500;font-size:43px;letter-spacing:-.01em;fill:var(--ink)}
 
 .main-nav{display:flex;align-items:center;gap:clamp(24px,2.8vw,44px)}
 /* Top-level items only — dropdown links are styled separately below. */
@@ -233,6 +234,13 @@ strong,b{font-weight:600;color:var(--ink)}
 .mobile-panel nav .mp-sub a.active,.mobile-panel nav .mp-sub a:hover{color:var(--brand)}
 .mobile-panel nav .mp-sub a.active{font-weight:600}
 .mobile-panel nav .mp-sub a.active::before{background:var(--brand);width:14px}
+.mobile-panel nav .mp-parent{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.mobile-panel nav .mp-parent a{flex:1;border-bottom:0}
+.mp-caret{flex:none;background:none;border:0;margin:0;padding:14px 4px 14px 14px;color:var(--ink);display:flex;align-items:center;cursor:pointer;transition:transform .25s,color .2s}
+.mp-caret svg{width:22px;height:22px}
+.mp-caret:hover{color:var(--brand)}
+.mp-caret[aria-expanded="true"]{transform:rotate(180deg)}
+.mobile-panel nav .mp-sub[hidden]{display:none}
 .mp-meta{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);font-size:.94rem}
 .mp-meta a{display:block;padding:8px 0;color:var(--body)}
 .mp-meta a:hover{color:var(--brand)}
@@ -743,6 +751,7 @@ strong,b{font-weight:600;color:var(--ink)}
 .client-logo:hover{border-color:var(--brand-100);box-shadow:var(--sh-2);transform:translateY(-3px)}
 .client-logo img{max-height:60px;width:auto;object-fit:contain;filter:none;opacity:1;transition:transform .35s}
 .client-logo:hover img{transform:scale(1.05)}
+.client-logo-name{font-family:var(--sans);font-weight:600;font-size:.8rem;line-height:1.28;color:var(--ink-2);text-align:center}
 @media (max-width:900px){.client-grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:560px){.client-grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -1059,6 +1068,9 @@ strong,b{font-weight:600;color:var(--ink)}
 .office-cards .footer-lines a:hover{color:var(--brand-100)}
 .office-cards .footer-lines svg{color:#fff}
 .office-cards .footer-lines .k{color:rgba(255,255,255,.72)}
+.office-cards .tile{display:flex;flex-direction:column}
+.office-cards .tile address{margin-top:8px}
+.office-cards .footer-lines{margin-top:auto;padding-top:28px}
 .site-footer h4{color:#fff;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:24px}
 .site-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
 .site-footer li{margin:0}
