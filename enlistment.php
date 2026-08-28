@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Client | ARTISAN Chartered Accountants</title>
-<meta name="description" content="ARTISAN Chartered Accountants client portfolio in Bangladesh.">
-<link rel="canonical" href="https://artisan-ca.net/client">
+<title>Enlistment of the Firm | ARTISAN Chartered Accountants</title>
+<meta name="description" content="Regulatory bodies and authorities with which ARTISAN Chartered Accountants is enlisted.">
+<link rel="canonical" href="https://artisan-ca.net/enlistment">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ARTISAN Chartered Accountants">
-<meta property="og:title" content="Client | ARTISAN Chartered Accountants">
-<meta property="og:description" content="ARTISAN Chartered Accountants client portfolio in Bangladesh.">
+<meta property="og:title" content="Enlistment of the Firm | ARTISAN Chartered Accountants">
+<meta property="og:description" content="Regulatory bodies and authorities with which ARTISAN Chartered Accountants is enlisted.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#1B61A9">
 <link rel="icon" href="assets/img/logo.png">
@@ -74,12 +74,12 @@
           <a href="management" data-nav="management">Our Team</a>
           <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
           <a href="affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
-          <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
+          <a href="enlistment" data-nav="enlistment" class="active">Enlistment of the Firm</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
       <a href="resources" data-nav="resources">Resources</a>
-      <a href="client" data-nav="client" class="active">Clients</a>
+      <a href="client" data-nav="client">Clients</a>
       <a href="gallery" data-nav="gallery">Gallery</a>
       <a href="contact" data-nav="contact">Contact</a>
         </nav>
@@ -106,11 +106,11 @@
       <a href="management" data-nav="management">Our Team</a>
       <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
       <a href="affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
-      <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
+      <a href="enlistment" data-nav="enlistment" class="active">Enlistment of the Firm</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
     <a href="resources" data-nav="resources"><i>04</i> Resources</a>
-    <a href="client" data-nav="client" class="active"><i>05</i> Clients</a>
+    <a href="client" data-nav="client"><i>05</i> Clients</a>
     <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
     <a href="contact" data-nav="contact"><i>07</i> Contact</a>
   </nav>
@@ -128,12 +128,12 @@
     <div class="tile tile-brand masthead-tile">
       <div class="masthead-grid">
         <div>
-          <div class="crumbs"><a href="/">Home</a><span>/</span><span>Client</span></div>
-          <span class="chip chip-light">Our Clients</span>
-          <h1>Trusted by <em>leading organizations.</em></h1>
+          <div class="crumbs"><a href="/">Home</a><span>/</span><a href="about">About</a><span>/</span><span>Enlistment of the Firm</span></div>
+          <span class="chip chip-light">About the Firm</span>
+          <h1>Enlistment <em>of the firm.</em></h1>
         </div>
         <div class="masthead-note">
-          <p>From government bodies and financial institutions to manufacturers and non-profits, our clients span 26 sectors across Bangladesh.</p>
+          <p>ARTISAN is enlisted with the country&rsquo;s principal financial, securities, insurance and development regulators.</p>
         </div>
       </div>
     </div>
@@ -142,51 +142,37 @@
 
 <section class="section">
   <div class="container">
-    <div class="client-grid reveal">
-      <div class="client-logo"><img src="assets/img/client/alico-logo-png_seeklogo-427723.png" alt="American Life Insurance Company (Alico)" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/delta_life_insurance_company_limited_logo.jpeg" alt="Delta Life Insurance" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/Dhaka-Electric-Supply-Company-Logo-Vector.svg-.png" alt="Dhaka Electricity Supply Company (DESCO)" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/Foodpanda_logo_since_2017.jpeg" alt="Foodpanda" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/Jamuna-Electronics-Logo-Vector.svg-.png" alt="Jamuna Electronics &amp; Automobiles" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/cropped-Global-Heavy-Chemicals-Logo-Black-300x100.png.webp" alt="Global Heavy Chemical" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/lira_group_of_industries_logo.jpeg" alt="Lira Group of Industries" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/peoples-logo-1000-x-563.gif" alt="Peoples Insurance Company" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/united-group1.webp" alt="United Group" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/uttara-motors-logo-png_seeklogo-447358.png" alt="Uttara Motor Corporation" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/standard-ceramic.jpeg" alt="Standard Ceramic Bangladesh (Super Stone)" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/logo.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/logo-1.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/logo-2.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/logo2.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/logo-fb.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/images.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/images-2.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/images-3.png" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/images-3.jpeg" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/images-4.jpeg" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/6.jpg" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/1751171001116.jpeg" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/32fa828ba61ea8d3e8dcce2e990a304e251f5819_url.jpeg" alt="Client logo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/img/client/1-20211108071725-583267265-1218872872.png.webp" alt="Client logo" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-sand" style="padding-top:0">
-  <div class="container">
-    <div class="tile tile-brand cta-tile" style="border-radius:var(--r-lg)">
-      <div class="cta-inner">
-        <div>
-          <span class="chip chip-light">Become a Client</span>
-          <h2>Looking for a <em>reliable</em> advisory partner?</h2>
-          <p>Tell us about your business and we will route your enquiry to the right partner-led team.</p>
-        </div>
-        <div class="actions">
-          <a class="btn btn-white" href="contact">Contact Us
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services">View Services</a>
-        </div>
+    <div class="head">
+      <div class="reveal">
+        <span class="chip">Enlistment with Regulatory Bodies</span>
+        <h2>Recognised by the <em>regulators.</em></h2>
       </div>
+      <div class="head-note reveal" data-delay="80">
+        <p class="mb-0">We are enlisted with the following organizations / regulatory body:</p>
+      </div>
+    </div>
+
+    <div class="contact-grid" style="margin-top:var(--gap)">
+      <article class="pcard reveal">
+        <span class="role">FRC</span>
+        <h3>Financial Reporting Council</h3>
+      </article>
+      <article class="pcard reveal" data-delay="60">
+        <span class="role">BSEC</span>
+        <h3>Bangladesh Securities and Exchange Commission</h3>
+      </article>
+      <article class="pcard reveal" data-delay="120">
+        <span class="role">IDRA</span>
+        <h3>Insurance Development &amp; Regulatory Authority</h3>
+      </article>
+      <article class="pcard reveal">
+        <span class="role">NGOAB</span>
+        <h3>NGO Affairs Bureau</h3>
+      </article>
+      <article class="pcard reveal" data-delay="60">
+        <span class="role">MRA</span>
+        <h3>Microcredit Regulatory Authority</h3>
+      </article>
     </div>
   </div>
 </section>

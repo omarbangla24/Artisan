@@ -73,6 +73,8 @@
           <a href="team" data-nav="partners">Our Partners</a>
           <a href="management" data-nav="management" class="active">Our Team</a>
           <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
+          <a href="affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
+          <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
@@ -103,6 +105,8 @@
       <a href="team" data-nav="partners">Our Partners</a>
       <a href="management" data-nav="management" class="active">Our Team</a>
       <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
+      <a href="affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
+      <a href="enlistment" data-nav="enlistment">Enlistment of the Firm</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
     <a href="resources" data-nav="resources"><i>04</i> Resources</a>
