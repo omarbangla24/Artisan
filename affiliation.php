@@ -84,11 +84,10 @@
           <span class="brand-rule" aria-hidden="true"></span>
           <p class="brand-tagline">Audit &amp; Assurance Tax<br>Regulatory, BPO<br>Consultancy &amp; Advisory</p>
           <span class="brand-rule" aria-hidden="true"></span>
-          <svg class="brand-anniversary" viewBox="0 0 250 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 50th year">
-            <text class="am-digit" x="-2" y="112">5</text>
-            <path class="am-ring" d="M181.6 29.7 A52 52 0 1 0 181.6 86.3" transform="translate(140 60) scale(1.14) translate(-140 -60)"></path>
-            <text class="am-th" x="92" y="74">th</text>
-            <text class="am-years" x="140" y="74">year</text>
+          <svg class="brand-anniversary" viewBox="0 0 300 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 49th year">
+            <text class="am-digit" x="-2" y="112">49</text>
+            <text class="am-th" x="196" y="58">th</text>
+            <text class="am-years" x="196" y="104">year</text>
           </svg>
         </div>
         <div class="header-utility">
@@ -106,8 +105,9 @@
         <div class="nav-dropdown">
           <a href="team" data-nav="partners">Our Partners</a>
           <a href="management" data-nav="management">Our Team</a>
-          <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
-          <a href="affiliation" data-nav="affiliation" class="active">Affiliation &amp; Enlistment</a>
+          <a href="vision" data-nav="vision">Vision, Mission &amp; Values</a>
+          <a href="affiliation#affiliation" data-nav="affiliation" class="active">Affiliation &amp; Membership</a>
+          <a href="affiliation#enlistment" data-nav="enlistment">Enlistment with Regulatory Body</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
@@ -137,8 +137,9 @@
     <div class="mp-sub" data-mp-panel hidden>
       <a href="team" data-nav="partners">Our Partners</a>
       <a href="management" data-nav="management">Our Team</a>
-      <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
-      <a href="affiliation" data-nav="affiliation" class="active">Affiliation &amp; Enlistment</a>
+      <a href="vision" data-nav="vision">Vision, Mission &amp; Values</a>
+      <a href="affiliation#affiliation" data-nav="affiliation" class="active">Affiliation &amp; Membership</a>
+      <a href="affiliation#enlistment" data-nav="enlistment">Enlistment with Regulatory Body</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
     <a href="resources" data-nav="resources"><i>04</i> Resources</a>
@@ -188,7 +189,7 @@
   <div class="container">
     <div class="reg-wrap">
       <aside class="reg-aside reveal">
-        <span class="reg-kicker">Enlistment with Regulatory Bodies</span>
+        <span class="reg-kicker">Enlistment with Regulatory Body</span>
         <h2>Recognised by the <em>regulators.</em></h2>
         <p>We are enlisted with the following organizations / regulatory body.</p>
         <div class="reg-count"><strong>05</strong><span>Regulatory&nbsp;bodies</span></div>
