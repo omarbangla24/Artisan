@@ -288,36 +288,25 @@
       <div class="tile split-6 reveal">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
           <span class="chip">Affiliation</span>
-          <span class="rail-badge" style="margin:0 0 20px">12</span>
+          <span class="rail-badge" style="margin:0 0 20px">03</span>
         </div>
         <ul class="ticks">
           <li>Institute of Chartered Accountants of Bangladesh (ICAB)</li>
-          <li>Institute of Company Secretaries of Bangladesh</li>
+          <li>Institute of Company Secretaries of Bangladesh (ICSB)</li>
           <li>Institute of Public Accountants (IPA), Australia</li>
-          <li>Financial Reporting Council (FRC)</li>
-          <li>IFRS Institute, Bangladesh</li>
-          <li>BMSL Investment Ltd (Merchant Bank)</li>
-          <li>Bangladesh Securities &amp; Exchange Commission (BSEC)</li>
-          <li>Dhaka Stock Exchange Ltd. (DSE)</li>
-          <li>Dhaka Taxes Bar Association of National Board of Revenue (NBR)</li>
-          <li>Bangladesh Paribesh Andolon (BAPA)</li>
-          <li>Rotary International</li>
-          <li>Dhaka Regional Committee (DRC)</li>
         </ul>
       </div>
       <div class="tile split-6 reveal" data-delay="80">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
           <span class="chip">Enlistments</span>
-          <span class="rail-badge" style="margin:0 0 20px">07</span>
+          <span class="rail-badge" style="margin:0 0 20px">05</span>
         </div>
         <ul class="ticks">
+          <li>Financial Reporting Council (FRC)</li>
           <li>Bangladesh Securities and Exchange Commission (BSEC)</li>
-          <li>NGO Bureau (NGOAB)</li>
+          <li>Insurance Development &amp; Regulatory Authority (IDRA)</li>
+          <li>NGO Affairs Bureau (NGOAB)</li>
           <li>Microcredit Regulatory Authority (MRA)</li>
-          <li>Rural Electrification Board (REB)</li>
-          <li>Palli-Karma-Sahayak Foundation (PKSF)</li>
-          <li>Bangladesh Power Development Board (BPDB)</li>
-          <li>Sena Kalyan Sangstha (SKS)</li>
         </ul>
       </div>
     </div>
