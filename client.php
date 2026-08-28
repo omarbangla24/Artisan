@@ -153,6 +153,7 @@
       <div class="client-logo"><img src="assets/img/client/peoples-logo-1000-x-563.gif" alt="Peoples Insurance Company" loading="lazy"></div>
       <div class="client-logo"><img src="assets/img/client/united-group1.webp" alt="United Group" loading="lazy"></div>
       <div class="client-logo"><img src="assets/img/client/uttara-motors-logo-png_seeklogo-447358.png" alt="Uttara Motor Corporation" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/img/client/standard-ceramic.jpeg" alt="Standard Ceramic Bangladesh (Super Stone)" loading="lazy"></div>
       <div class="client-logo"><img src="assets/img/client/logo.png" alt="Client logo" loading="lazy"></div>
       <div class="client-logo"><img src="assets/img/client/logo-1.png" alt="Client logo" loading="lazy"></div>
       <div class="client-logo"><img src="assets/img/client/logo-2.png" alt="Client logo" loading="lazy"></div>
