@@ -71,7 +71,7 @@
         <a href="about" data-nav="about">About<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
         <div class="nav-dropdown">
           <a href="team" data-nav="partners">Our Partners</a>
-          <a href="management" data-nav="management">Our Management Team</a>
+          <a href="management" data-nav="management">Our Team</a>
           <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
         </div>
       </div>
@@ -101,7 +101,7 @@
     </div>
     <div class="mp-sub" data-mp-panel hidden>
       <a href="team" data-nav="partners">Our Partners</a>
-      <a href="management" data-nav="management">Our Management Team</a>
+      <a href="management" data-nav="management">Our Team</a>
       <a href="vision" data-nav="vision">Mission, Vision &amp; Values</a>
     </div>
     <a href="services" data-nav="services" class="active"><i>03</i> Services</a>
