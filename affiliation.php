@@ -82,7 +82,7 @@
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
           <span class="brand-rule" aria-hidden="true"></span>
-          <p class="brand-tagline">Audit &amp; Assurance<br>Tax &amp; Regulatory, BPO<br>Corporate Finance, Wealth Management, Consultancy &amp; Advisory</p>
+          <p class="brand-tagline">Audit &amp; Assurance Tax<br>Regulatory, BPO<br>Consultancy &amp; Advisory</p>
           <span class="brand-rule" aria-hidden="true"></span>
           <svg class="brand-anniversary" viewBox="0 0 250 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 50th year">
             <text class="am-digit" x="-2" y="112">5</text>
