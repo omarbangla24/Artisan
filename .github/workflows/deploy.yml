@@ -31,3 +31,6 @@ jobs:
             Archive.zip
             .rsyncignore
             **/.DS_Store
+            # Live secrets & server-generated files — never touch on deploy
+            admin/config.php
+            assets/inc/**

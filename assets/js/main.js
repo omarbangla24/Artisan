@@ -229,28 +229,30 @@
      Replace `handleSubmit` with a POST to your endpoint (PHP, Formspree,
      Netlify Forms, …) when a server-side handler is available.            */
   var MAIL_TO = 'info@artisancabd.com';
+  var SUBMIT_ENDPOINT = '/submit';
+  /* Forms wired to the server-side inbox (submit.php). Others fall back to mail. */
+  var FORM_KEYS = {
+    'Contact enquiry': 'contact',
+    'Consultation / Offer request': 'consultation',
+    'Newsletter subscription': 'newsletter'
+  };
 
-  function handleSubmit(form) {
-    var honey = form.querySelector('.hp-field input');
-    if (honey && honey.value) return; /* bot */
-
-    var status = form.querySelector('[data-form-status]') ||
+  function formStatus(form) {
+    return form.querySelector('[data-form-status]') ||
       (form.parentNode && form.parentNode.querySelector('[data-form-status]'));
+  }
+  function setStatus(form, msg, isError) {
+    var status = formStatus(form);
+    if (!status) return;
+    status.textContent = msg;
+    status.classList.add('is-visible');
+    status.classList.toggle('is-error', !!isError);
+  }
 
-    /* Forms that must never be emailed (credentials, uploads) need a real
-       server-side handler — see README.md. */
-    if (form.hasAttribute('data-no-mail')) {
-      if (status) {
-        status.textContent = form.getAttribute('data-pending') ||
-          'This form needs a server-side handler before it can be submitted. Please contact the firm at ' + MAIL_TO + '.';
-        status.classList.add('is-visible');
-      }
-      return;
-    }
-
+  /* Legacy path: compose a mailto for forms without a server handler. */
+  function mailtoFallback(form, subject) {
     var lines = [];
     Array.prototype.forEach.call(form.elements, function (el) {
-      /* never put credentials or file paths into an email */
       if (!el.name || el.type === 'submit' || el.type === 'password' ||
           el.type === 'file' || el.closest('.hp-field')) return;
       var label = form.querySelector('label[for="' + el.id + '"]');
@@ -258,19 +260,62 @@
       var value = el.type === 'checkbox' ? (el.checked ? 'Yes' : 'No') : el.value.trim();
       if (value) lines.push(name + ': ' + value);
     });
-
-    var subject = form.getAttribute('data-subject') || 'Website enquiry';
-    var href = 'mailto:' + MAIL_TO +
+    window.location.href = 'mailto:' + MAIL_TO +
       '?subject=' + encodeURIComponent(subject) +
       '&body=' + encodeURIComponent(lines.join('\n'));
-    window.location.href = href;
-
-    if (status) {
-      status.textContent = form.getAttribute('data-success') ||
-        'Thank you — your details have been prepared in an email to ' + MAIL_TO + '. Please press send in your mail application to complete the request.';
-      status.classList.add('is-visible');
-    }
+    setStatus(form, form.getAttribute('data-success') ||
+      'Thank you — your details have been prepared in an email to ' + MAIL_TO +
+      '. Please press send in your mail application to complete the request.', false);
     form.reset();
+  }
+
+  function handleSubmit(form) {
+    var honey = form.querySelector('.hp-field input');
+    if (honey && honey.value) return; /* bot */
+
+    /* Credential/upload forms still need their own backend. */
+    if (form.hasAttribute('data-no-mail')) {
+      setStatus(form, form.getAttribute('data-pending') ||
+        'This form needs a server-side handler before it can be submitted. Please contact the firm at ' + MAIL_TO + '.', true);
+      return;
+    }
+
+    var subject = form.getAttribute('data-subject') || 'Website enquiry';
+    var key = form.getAttribute('data-form-key') || FORM_KEYS[subject];
+
+    /* No server key -> keep the legacy mailto behaviour. */
+    if (!key) { mailtoFallback(form, subject); return; }
+
+    var btn = form.querySelector('[type="submit"]');
+    var data = new FormData(form);
+    data.append('form_key', key);
+    data.append('subject', subject);
+    if (btn) btn.disabled = true;
+    setStatus(form, 'Sending…', false);
+
+    fetch(SUBMIT_ENDPOINT, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' },
+      credentials: 'same-origin'
+    })
+      .then(function (r) {
+        return r.json().catch(function () { return { ok: false, message: 'Unexpected server response.' }; });
+      })
+      .then(function (res) {
+        if (res && res.ok) {
+          setStatus(form, res.message || form.getAttribute('data-success') ||
+            'Thank you — your message has been received.', false);
+          form.reset();
+        } else {
+          setStatus(form, (res && res.message) ||
+            'Sorry, something went wrong. Please email ' + MAIL_TO + '.', true);
+        }
+      })
+      .catch(function () {
+        setStatus(form, 'Network error. Please email ' + MAIL_TO + '.', true);
+      })
+      .then(function () { if (btn) btn.disabled = false; });
   }
 
   Array.prototype.forEach.call(doc.querySelectorAll('[data-form]'), function (form) {

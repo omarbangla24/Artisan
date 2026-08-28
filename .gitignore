@@ -1,2 +1,12 @@
 .DS_Store
 **/.DS_Store
+
+# Live secrets — never commit (created on the server from config.sample.php)
+admin/config.php
+
+# Server-generated integration partials (written by Admin → Settings)
+assets/inc/
+
+# Local test databases
+*.sqlite
+*.sqlite3

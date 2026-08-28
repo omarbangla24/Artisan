@@ -1,0 +1,18 @@
+# Admin panel keeps standard .php URLs — stop the site's clean-URL rewrites here.
+RewriteEngine On
+
+# Never serve configuration files, even if PHP is somehow disabled.
+<FilesMatch "^config(\.sample)?\.php$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# Keep the admin out of search engines at the server level too.
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

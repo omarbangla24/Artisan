@@ -33,6 +33,8 @@
   "sameAs":["https://www.linkedin.com/company/artisan-ca/"]
 }
 </script>
+
+<?php @include __DIR__ . '/assets/inc/site-head.php'; ?>
 </head>
 <body>
 <a href="#main" style="position:absolute;left:-9999px">Skip to content</a>
@@ -343,5 +345,7 @@
 </button>
 
 <script src="assets/js/main.js?v=1787765548" defer></script>
+
+<?php @include __DIR__ . '/assets/inc/site-body.php'; ?>
 </body>
 </html>
