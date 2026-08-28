@@ -29,13 +29,13 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps        # cPanel সাধারণত explicit FTPS চায়; না চললে ftp করে দিন
           server-dir: public_html/
-          exclude:
-            - "**/.git*"
-            - "**/.git*/**"
-            - ".github/**"
-            - "src/**"
-            - "build.py"
-            - "README.md"
-            - "Archive.zip"
-            - ".rsyncignore"
-            - "**/.DS_Store"
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            src/**
+            build.py
+            README.md
+            Archive.zip
+            .rsyncignore
+            **/.DS_Store
