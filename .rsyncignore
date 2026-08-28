@@ -1,0 +1,20 @@
+# cPanel-এ আপলোড হবে না — source/dev ফাইল
+.git/
+.github/
+src/
+build.py
+build.sh
+README.md
+Archive.zip
+.DS_Store
+**/.DS_Store
+.rsyncignore
+.gitignore
+.nojekyll
+
+# নিচের ফাইলগুলো server-এ থাকলে rsync --delete দিয়ে মুছবে না (host-managed)
+.htaccess
+.well-known/
+cgi-bin/
+.htpasswd
+error_log

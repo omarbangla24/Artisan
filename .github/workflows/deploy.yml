@@ -1,0 +1,36 @@
+name: Deploy to cPanel
+
+# main branch-এ push করলেই এই workflow চলবে
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:        # চাইলে GitHub UI থেকে ম্যানুয়ালি চালানো যাবে
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build site
+        run: python3 build.py
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy via rsync over SSH
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.SSH_PORT }}" \
+            --exclude-from='.rsyncignore' \
+            ./ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:public_html/"
