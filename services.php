@@ -148,7 +148,7 @@
       </div>
       <div class="tile tile-flat split-5 reveal" data-delay="80">
         <div class="rows">
-          <div class="row-item"><span class="k">01</span><span class="v">Backed by four decades of experience</span></div>
+          <div class="row-item"><span class="k">01</span><span class="v">Legacy of five decades of experience</span></div>
           <div class="row-item"><span class="k">02</span><span class="v">Full-service organization</span></div>
           <div class="row-item"><span class="k">03</span><span class="v">Tailor-made services</span></div>
           <div class="row-item"><span class="k">04</span><span class="v">Sector-wise focus</span></div>
