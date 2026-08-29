@@ -154,11 +154,11 @@
     <div class="split" style="margin-top:var(--gap)">
       <div class="tile tile-brand split-5 reveal">
         <span class="chip chip-light">Contact Form</span>
-        <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem)">We'd love to hear from you</h2>
-        <ul class="ticks" style="margin-top:24px">
-          <li>Tell us your name and how to reach you</li>
-          <li>Describe what you need in a short message</li>
-          <li>We respond within one business day</li>
+        <h2 style="font-size:clamp(1.6rem,2.5vw,2.2rem);color:#fff;font-weight:700">We'd love to hear from you</h2>
+        <ul class="ticks" style="margin-top:24px;font-weight:700">
+          <li style="color:#fff">Tell us your name and how to reach you</li>
+          <li style="color:#fff">Describe what you need in a short message</li>
+          <li style="color:#fff">We respond within one business day</li>
         </ul>
       </div>
 
