@@ -274,9 +274,8 @@
       <div class="tile tile-brand split-6 reveal" data-delay="80">
         <span class="chip chip-light">Banani Office</span>
         <address style="font-style:normal;font-size:1.06rem;line-height:1.75;color:#fff">
-          ARTISAN Chartered Accountants<br>
           Banani Branch<br>
-          House No. 7 (2nd Floor),<br>
+          House No. 7 (2nd &amp; 3rd Floor),<br>
           Road No. 2/1, Block-L, Banani<br>
           Dhaka-1213, Bangladesh
         </address>
