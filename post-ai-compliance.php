@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=1787765548">
+<link rel="stylesheet" href="assets/css/style.css?v=1787980240">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -454,7 +454,7 @@
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
 </button>
 
-<script src="assets/js/main.js?v=1787765548" defer></script>
+<script src="assets/js/main.js?v=1787980240" defer></script>
 
 <?php @include __DIR__ . '/assets/inc/site-body.php'; ?>
 </body>

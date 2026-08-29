@@ -1140,8 +1140,17 @@ strong,b{font-weight:600;color:var(--ink)}
   .chart-line polyline{stroke-dashoffset:0}
   .photo-card p{max-height:200px;opacity:1}
 }
+/* Footer text: white & bold for on-screen clarity and clean printing */
+.site-footer{color:#fff}
+.footer-brand p,.footer-connect p,.site-footer p{color:#fff;font-weight:600}
+.footer-lines a,.site-footer ul a,.footer-bottom,.footer-bottom a,.footer-developer{color:#fff;font-weight:600}
+.footer-lines .k{color:rgba(255,255,255,.82)}
+
 @media print{
-  .site-header,.mobile-panel,.backdrop,.to-top,.site-footer,.modal,.cta-tile{display:none !important}
+  .site-header,.mobile-panel,.backdrop,.to-top,.modal,.cta-tile{display:none !important}
   body{background:#fff}
   .section{padding:14px 0}
+  /* Keep the footer visible and force its dark band to print so white text stays clear */
+  .site-footer{background:var(--night) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .site-footer,.site-footer p,.site-footer a,.site-footer h4,.site-footer li{color:#fff !important;font-weight:700}
 }
