@@ -47,7 +47,7 @@
 .reg-row::before{content:"";position:absolute;left:0;top:15px;bottom:15px;width:3px;border-radius:3px;background:var(--brand-100);transition:.25s}
 .reg-row:hover{background:var(--brand-50)}
 .reg-row:hover::before{background:var(--brand);top:9px;bottom:9px}
-.reg-num{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.25rem);color:var(--brand-100);min-width:2.4ch;line-height:1;letter-spacing:-.02em}
+.reg-num{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.25rem);color:var(--ink);min-width:2.4ch;line-height:1;letter-spacing:-.02em}
 .reg-badge{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:92px;padding:9px 15px;border:1px solid var(--brand-100);border-radius:var(--r-full);background:var(--paper);color:var(--brand-600);font-weight:700;font-size:.78rem;letter-spacing:.04em;text-align:center}
 .reg-name{font-family:var(--display);font-weight:600;font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.35;color:var(--ink)}
 @media(max-width:520px){.reg-row{flex-wrap:wrap;gap:12px}.reg-num{font-size:1.4rem;min-width:auto}.reg-name{flex:1 1 100%;order:3}}
@@ -77,11 +77,10 @@
   <div class="container">
     <div class="header-inner">
       <div class="header-top">
-        <div class="brand-lockup">
-          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
+        <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
-          <span class="brand-rule" aria-hidden="true"></span>
+          <div class="brand-meta"><span class="brand-rule" aria-hidden="true"></span>
           <p class="brand-tagline">Audit &amp; Assurance Tax<br>Regulatory, BPO<br>Consultancy &amp; Advisory</p>
           <span class="brand-rule" aria-hidden="true"></span>
           <svg class="brand-anniversary" viewBox="0 0 300 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 49th year">
@@ -111,7 +110,7 @@
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
-      <a href="resources" data-nav="resources">Resources</a>
+      <a href="resources" data-nav="resources">Articles</a>
       <a href="client" data-nav="client">Clients</a>
       <a href="gallery" data-nav="gallery">Gallery</a>
       <a href="contact" data-nav="contact">Contact</a>
@@ -142,7 +141,7 @@
       <a href="affiliation#enlistment" data-nav="enlistment">Enlistment with Regulatory Body</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
-    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="resources" data-nav="resources"><i>04</i> Articles</a>
     <a href="client" data-nav="client"><i>05</i> Clients</a>
     <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
     <a href="contact" data-nav="contact"><i>07</i> Contact</a>
@@ -256,12 +255,13 @@
         <div class="footer-lines footer-connect-line">
           <a href="mailto:info@artisancabd.com">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg></span>
-            <span><span class="k">Email</span>info@artisancabd.com</span>
+            <span>info.com</span>
           </a>
         </div>
         <div class="social">
-          <a href="https://www.linkedin.com/company/artisan-ca/" target="_blank" rel="noopener" aria-label="ARTISAN on LinkedIn">
+          <a href="https://www.linkedin.com/company/artisan-ca/" target="_blank" rel="noopener" class="linkedin-link">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg>
+            <span>linkedin.com/company/artisan-ca</span>
           </a>
         </div>
       </div>

@@ -154,9 +154,9 @@ strong,b{font-weight:600;color:var(--ink)}
 .site-header.is-stuck{box-shadow:0 12px 34px rgba(14,32,50,.08);border-bottom-color:transparent}
 /* Two-row header: brand + utility links on top, nav + search below. */
 .header-inner{display:flex;flex-direction:column;gap:14px;padding:14px 0 12px}
-.header-top{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.header-top{display:flex;align-items:center;gap:22px}
 .header-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand-lockup{display:flex;align-items:center;gap:22px}
+.brand-meta{display:flex;align-items:center;gap:22px}
 .brand{display:flex;align-items:center;gap:14px}
 /* width-driven so the logo keeps its true aspect ratio (never squished) */
 .brand img{width:178px;height:auto;}
@@ -197,7 +197,7 @@ strong,b{font-weight:600;color:var(--ink)}
 .main-nav>.nav-item:has(.nav-dropdown a.active)>a{color:var(--brand-700)}
 
 /* Top-right utility links — Contact us | Subscribe */
-.header-utility{display:flex;align-items:center;gap:18px;flex:none}
+.header-utility{display:flex;align-items:center;gap:18px;flex:none;margin-left:auto}
 .header-utility>a,.header-utility>button{font-family:var(--sans);font-size:1.02rem;font-weight:700;color:var(--brand);background:transparent;border:0;padding:0;cursor:pointer;white-space:nowrap;transition:color .2s}
 .header-utility>a:hover,.header-utility>button:hover{color:var(--brand-700)}
 .util-sep{width:1px;height:20px;background:var(--line-2);flex:none}
@@ -256,18 +256,19 @@ strong,b{font-weight:600;color:var(--ink)}
 @media (max-width:900px){
   .header-bottom{display:none}
   .nav-toggle{display:flex}
-  /* Two-row header: row 1 = utility strip, row 2 = logo (left) + hamburger (right). */
-  .header-top{flex-wrap:wrap;align-items:center;gap:10px}
-  /* Row 1 — topbar strip: Career · Get an Offer, aligned right. */
-  .header-utility{order:1;flex:0 0 100%;justify-content:flex-end;gap:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
-  /* Row 2 — logo (with tagline + 49th-year badge) on the left. */
-  .brand-lockup{order:2;flex:1 1 auto;flex-wrap:wrap;gap:6px 12px;align-items:center}
-  .brand{flex:0 0 100%}
+  /* 2x2 header grid:
+     row 1 (topbar strip) = tagline/badge (left) + Career·Get an Offer (right)
+     row 2                = logo (left) + hamburger (right) */
+  .header-top{display:grid;grid-template-columns:1fr auto;
+    grid-template-areas:"meta utility" "logo toggle";
+    align-items:center;row-gap:10px;column-gap:0}
+  .brand-meta{grid-area:meta;justify-self:stretch;justify-content:flex-start;gap:10px;padding:0 12px 10px 0;border-bottom:1px solid var(--line);align-self:stretch}
+  .header-utility{grid-area:utility;justify-self:end;margin-left:0;padding-bottom:10px;border-bottom:1px solid var(--line);align-self:stretch}
+  .brand{grid-area:logo;justify-self:start}
+  .nav-toggle{grid-area:toggle;justify-self:end}
   .brand-rule{display:none}
   .brand-tagline{display:block;white-space:nowrap;font-size:.58rem;line-height:1.3}
   .brand-anniversary{display:block;height:24px}
-  /* Hamburger on the far right of row 2. */
-  .nav-toggle{order:3;margin-left:auto}
   .header-inner{padding:12px 0}
 }
 @media (max-width:600px){
@@ -1069,7 +1070,7 @@ strong,b{font-weight:600;color:var(--ink)}
 .site-footer{background:var(--night);color:#8E9FAE;margin-top:0;font-size:.95rem}
 .footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.4fr;gap:clamp(28px,3.6vw,56px);padding:clamp(52px,6vw,88px) 0 clamp(36px,4vw,56px)}
 .footer-brand img{height:48px;margin-bottom:24px;filter:brightness(0) invert(1);opacity:.94}
-.footer-brand p{max-width:34ch}
+.footer-brand p{max-width:34ch;text-align:justify}
 .footer-lines{display:grid;gap:12px;margin-top:24px}
 .footer-lines a{display:flex;align-items:center;gap:16px;color:#DCE5EC}
 .footer-lines a:hover{color:var(--brand-300)}
@@ -1097,6 +1098,9 @@ strong,b{font-weight:600;color:var(--ink)}
 .social a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:.28s}
 .social a:hover{background:var(--brand)}
 .social svg{width:17px;height:17px;color:#fff}
+.social a.linkedin-link{width:auto;height:auto;border-radius:0;background:none;gap:10px;padding:0;color:#DCE5EC;font-size:.88rem}
+.social a.linkedin-link:hover{background:none;color:var(--brand-300)}
+.social a.linkedin-link svg{width:18px;height:18px;flex:none}
 .footer-connect p{max-width:30ch;margin-bottom:18px}
 .footer-connect-line{margin:0 0 20px}.footer-connect-line a{font-size:.9rem}
 .management-placeholder{min-height:58vh;display:grid;place-items:center;background:linear-gradient(135deg,#eef5fa,#fff)}

@@ -43,11 +43,10 @@
   <div class="container">
     <div class="header-inner">
       <div class="header-top">
-        <div class="brand-lockup">
-          <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
+        <a class="brand" href="/" aria-label="ARTISAN Chartered Accountants — Home">
             <img src="assets/img/logo.png" alt="ARTISAN Chartered Accountants" width="180" height="40">
           </a>
-          <span class="brand-rule" aria-hidden="true"></span>
+          <div class="brand-meta"><span class="brand-rule" aria-hidden="true"></span>
           <p class="brand-tagline">Audit &amp; Assurance Tax<br>Regulatory, BPO<br>Consultancy &amp; Advisory</p>
           <span class="brand-rule" aria-hidden="true"></span>
           <svg class="brand-anniversary" viewBox="0 0 300 116" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Celebrating 49th year">
@@ -72,12 +71,11 @@
           <a href="team" data-nav="partners">Our Partners</a>
           <a href="management" data-nav="management">Our Team</a>
           <a href="vision" data-nav="vision">Vision, Mission &amp; Values</a>
-          <a href="affiliation#affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
-          <a href="affiliation#enlistment" data-nav="enlistment">Enlistment with Regulatory Body</a>
+          <a href="affiliation" data-nav="affiliation">Affiliation &amp; Enlistment</a>
         </div>
       </div>
       <a href="services" data-nav="services">Services</a>
-      <a href="resources" data-nav="resources">Resources</a>
+      <a href="resources" data-nav="resources">Articles</a>
       <a href="client" data-nav="client">Clients</a>
       <a href="gallery" data-nav="gallery">Gallery</a>
       <a href="contact" data-nav="contact">Contact</a>
@@ -104,11 +102,10 @@
       <a href="team" data-nav="partners">Our Partners</a>
       <a href="management" data-nav="management">Our Team</a>
       <a href="vision" data-nav="vision">Vision, Mission &amp; Values</a>
-      <a href="affiliation#affiliation" data-nav="affiliation">Affiliation &amp; Membership</a>
-      <a href="affiliation#enlistment" data-nav="enlistment">Enlistment with Regulatory Body</a>
+      <a href="affiliation" data-nav="affiliation">Affiliation &amp; Enlistment</a>
     </div>
     <a href="services" data-nav="services"><i>03</i> Services</a>
-    <a href="resources" data-nav="resources"><i>04</i> Resources</a>
+    <a href="resources" data-nav="resources"><i>04</i> Articles</a>
     <a href="client" data-nav="client"><i>05</i> Clients</a>
     <a href="gallery" data-nav="gallery"><i>06</i> Gallery</a>
     <a href="contact" data-nav="contact"><i>07</i> Contact</a>
@@ -278,7 +275,7 @@
 
     <div class="photo-grid">
       <a class="photo-card reveal" href="services#audit-assurance">
-        <img src="assets/img/single-servce1.jpg" alt="Auditor reviewing financial statements with a calculator" loading="lazy">
+        <img src="assets/img/svc-audit.jpg" alt="Auditor reviewing financial statements with a calculator" loading="lazy">
         <span class="photo-num">01</span>
         <div class="photo-card-inner">
           <h3>Audit &amp; Assurance Service</h3>
@@ -287,7 +284,7 @@
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
       <a class="photo-card reveal" href="services#tax-regulatory" data-delay="60">
-        <img src="assets/img/bg2.jpg" alt="Shelves of tax and regulatory reference volumes" loading="lazy">
+        <img src="assets/img/svc-tax.jpg" alt="Pen signing a tax or regulatory document" loading="lazy">
         <span class="photo-num">02</span>
         <div class="photo-card-inner">
           <h3>Tax and Regulatory Services</h3>
@@ -296,7 +293,7 @@
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
       <a class="photo-card reveal" href="services#corporate-finance" data-delay="120">
-        <img src="assets/img/bg3.jpg" alt="City skyline representing corporate finance and transactions" loading="lazy">
+        <img src="assets/img/svc-finance.jpg" alt="Stock market chart representing corporate finance and transactions" loading="lazy">
         <span class="photo-num">03</span>
         <div class="photo-card-inner">
           <h3>Corporate Finance Advisory</h3>
@@ -305,7 +302,7 @@
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
       <a class="photo-card reveal" href="services#bpo" data-delay="180">
-        <img src="assets/img/single-servce3.jpg" alt="Modern office workstation for outsourced business processes" loading="lazy">
+        <img src="assets/img/svc-bpo.jpg" alt="Data centre server racks representing business process outsourcing" loading="lazy">
         <span class="photo-num">04</span>
         <div class="photo-card-inner">
           <h3>Business Process Outsourcing</h3>
@@ -314,7 +311,7 @@
         <span class="photo-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
       </a>
       <a class="photo-card reveal" href="services#risk-advisory" data-delay="240">
-        <img src="assets/img/single-servce2.jpg" alt="Planning calendar and devices for risk monitoring" loading="lazy">
+        <img src="assets/img/svc-risk.jpg" alt="Chess pieces symbolising strategic risk and advisory planning" loading="lazy">
         <span class="photo-num">05</span>
         <div class="photo-card-inner">
           <h3>Risk and Advisory Services</h3>
@@ -448,7 +445,7 @@
         <h2>Insights &amp; publications.</h2>
       </div>
       <div class="head-note reveal" data-delay="80">
-        <a class="alink" href="resources">View all resources
+        <a class="alink" href="resources">View all articles
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       </div>
     </div>
@@ -530,12 +527,13 @@
         <div class="footer-lines footer-connect-line">
           <a href="mailto:info@artisancabd.com">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg></span>
-            <span><span class="k">Email</span>info@artisancabd.com</span>
+            <span>info.com</span>
           </a>
         </div>
         <div class="social">
-          <a href="https://www.linkedin.com/company/artisan-ca/" target="_blank" rel="noopener" aria-label="ARTISAN on LinkedIn">
+          <a href="https://www.linkedin.com/company/artisan-ca/" target="_blank" rel="noopener" class="linkedin-link">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg>
+            <span>linkedin.com/company/artisan-ca</span>
           </a>
         </div>
       </div>
@@ -615,7 +613,8 @@
         <div class="field"><label for="q-phone">Contact Number <span class="req">*</span></label><input type="tel" id="q-phone" name="contact_number" required></div>
         <div class="field"><label for="q-company">Company Name</label><input type="text" id="q-company" name="company"></div>
         <div class="field"><label for="q-email">Email Address <span class="req">*</span></label><input type="email" id="q-email" name="email" required></div>
-        <div class="field is-full"><label for="q-address">Full Address</label><textarea id="q-address" name="address" rows="2"></textarea></div>
+        <div class="field is-full"><label for="q-address">Full Address</label><input type="text" id="q-address" name="address"></div>
+        <div class="field is-full"><label for="q-description">Description</label><textarea id="q-description" name="description" rows="4" placeholder="Briefly describe your requirement…"></textarea></div>
       </div>
       <p class="form-note">Submitting this form does not create a professional or client relationship. Services commence only after a formal engagement letter.</p>
       <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px">Submit Request</button>
