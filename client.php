@@ -168,24 +168,6 @@
   </div>
 </section>
 
-<section class="section section-sand" style="padding-top:0">
-  <div class="container">
-    <div class="tile tile-brand cta-tile" style="border-radius:var(--r-lg)">
-      <div class="cta-inner">
-        <div>
-          <span class="chip chip-light">Become a Client</span>
-          <h2>Looking for a <em>reliable</em> advisory partner?</h2>
-          <p>Tell us about your business and we will route your enquiry to the right partner-led team.</p>
-        </div>
-        <div class="actions">
-          <a class="btn btn-white" href="contact">Contact Us
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <a class="btn btn-glass" href="services">View Services</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 </main>
 
 <section class="section-sm">
