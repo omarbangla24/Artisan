@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['delete_id'])) {
 // Mark read
 $view = isset($_GET['view']) ? (int)$_GET['view'] : 0;
 if ($view) {
-    $db->prepare("UPDATE form_entries SET read_at=datetime('now') WHERE id=? AND read_at IS NULL")->execute([$view]);
+    $db->prepare("UPDATE form_entries SET read_at=NOW() WHERE id=? AND read_at IS NULL")->execute([$view]);
     $entry = $db->prepare("SELECT * FROM form_entries WHERE id=?")->execute([$view]) ? $db->prepare("SELECT * FROM form_entries WHERE id=?"): null;
     $stmt = $db->prepare("SELECT * FROM form_entries WHERE id=?"); $stmt->execute([$view]);
     $entry = $stmt->fetch();

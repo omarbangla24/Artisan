@@ -47,7 +47,7 @@ $ip       = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? '';
 // Save to database
 try {
     $db = db();
-    $db->prepare("INSERT INTO form_entries (form_type, data, ip, created_at) VALUES (?, ?, ?, datetime('now'))")
+    $db->prepare("INSERT INTO form_entries (form_type, data, ip, created_at) VALUES (?, ?, ?, NOW())")
        ->execute([$formType, json_encode($clean), $ip]);
 } catch (\Throwable $e) {
     error_log('DB error saving form: ' . $e->getMessage());

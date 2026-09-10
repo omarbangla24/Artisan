@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['save_partner'])) {
         $db->prepare("UPDATE partners SET name=?,url=?,category=?,logo=?,sort_order=?,active=? WHERE id=?")->execute([$name,$url,$category,$logo,$order,$active,$id]);
         logActivity('Updated partner',$name); $msg='Partner updated.';
     } else {
-        $db->prepare("INSERT INTO partners (name,url,category,logo,sort_order,active,created_at) VALUES (?,?,?,?,?,?,datetime('now'))")->execute([$name,$url,$category,$logo,$order,$active]);
+        $db->prepare("INSERT INTO partners (name,url,category,logo,sort_order,active,created_at) VALUES (?,?,?,?,?,?,NOW())")->execute([$name,$url,$category,$logo,$order,$active]);
         logActivity('Created partner',$name); $msg='Partner added.';
     }
 }

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['save_client'])) {
         $db->prepare("UPDATE clients SET name=?,url=?,sector=?,logo=?,sort_order=?,active=? WHERE id=?")->execute([$name,$url,$sector,$logo,$order,$active,$id]);
         logActivity('Updated client',$name); $msg='Client updated.';
     } else {
-        $db->prepare("INSERT INTO clients (name,url,sector,logo,sort_order,active,created_at) VALUES (?,?,?,?,?,?,datetime('now'))")->execute([$name,$url,$sector,$logo,$order,$active]);
+        $db->prepare("INSERT INTO clients (name,url,sector,logo,sort_order,active,created_at) VALUES (?,?,?,?,?,?,NOW())")->execute([$name,$url,$sector,$logo,$order,$active]);
         logActivity('Created client',$name); $msg='Client added.';
     }
 }

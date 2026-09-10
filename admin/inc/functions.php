@@ -11,7 +11,7 @@ function setting(string $key, string $default = ''): string {
 }
 
 function saveSetting(string $key, string $value): void {
-    db()->prepare("INSERT OR REPLACE INTO settings (key,value) VALUES (?,?)")->execute([$key,$value]);
+    db()->prepare("INSERT INTO settings (`key`,value) VALUES (?,?) ON DUPLICATE KEY UPDATE value=VALUES(value)")->execute([$key,$value]);
 }
 
 function uploadFile(array|string $fileOrField, string $subdir, array $allow = ['jpg','jpeg','png','webp','gif']): ?string {

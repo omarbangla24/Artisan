@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['upload'])) {
             $single = ['name'=>$files['name'][$i],'tmp_name'=>$files['tmp_name'][$i],'size'=>$files['size'][$i],'type'=>$files['type'][$i],'error'=>$files['error'][$i]];
             $up = uploadFile($single, 'gallery');
             if ($up) {
-                $db->prepare("INSERT INTO gallery (filename,category,sort_order,created_at) VALUES (?,?,?,datetime('now'))")
+                $db->prepare("INSERT INTO gallery (filename,category,sort_order,created_at) VALUES (?,?,?,NOW())")
                    ->execute([$up, $category, 0]);
                 $uploaded++;
             }

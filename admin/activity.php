@@ -7,7 +7,7 @@ $db = db();
 
 if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['clear_log'])) {
     requireRole('superadmin');
-    $db->exec("DELETE FROM activity_log WHERE created_at < datetime('now','-30 days')");
+    $db->exec("DELETE FROM activity_log WHERE created_at < NOW() - INTERVAL 30 DAY");
     logActivity('Cleared activity log (>30 days)');
     header('Location: /admin/activity.php?msg=cleared'); exit;
 }

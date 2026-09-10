@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['save_job'])) {
            ->execute([$title,$dept,$type,$location,$desc,$req,$apply_email,$deadline,$published,$id]);
         logActivity('Updated job', $title); $msg='Job updated.';
     } else {
-        $db->prepare("INSERT INTO jobs (title,department,job_type,location,description,requirements,apply_email,deadline,published,created_at) VALUES (?,?,?,?,?,?,?,?,?,datetime('now'))")
+        $db->prepare("INSERT INTO jobs (title,department,job_type,location,description,requirements,apply_email,deadline,published,created_at) VALUES (?,?,?,?,?,?,?,?,?,NOW())")
            ->execute([$title,$dept,$type,$location,$desc,$req,$apply_email,$deadline,$published]);
         logActivity('Created job', $title); $msg='Job created.';
     }

@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['save_user'])) {
     } else {
         if (!$pass) { $msg = 'Password required for new user.'; }
         else {
-            $db->prepare("INSERT INTO users (name,email,password,role,active,created_at) VALUES (?,?,?,?,?,datetime('now'))")
+            $db->prepare("INSERT INTO users (name,email,password,role,active,created_at) VALUES (?,?,?,?,?,NOW())")
                ->execute([$name,$email,password_hash($pass,PASSWORD_DEFAULT),$role,$active]);
             logActivity('Created user', $email);
             $msg = 'User created.';

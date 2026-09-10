@@ -24,15 +24,14 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
         $up = uploadFile($_FILES['thumb'], 'articles');
         if ($up) $thumb = $up;
     }
-    $now = "datetime('now')";
     $user = currentUser();
     if ($id) {
-        $db->prepare("UPDATE articles SET title=?,slug=?,category=?,excerpt=?,body=?,thumb=?,meta_title=?,meta_desc=?,published=?,updated_at=datetime('now') WHERE id=?")
+        $db->prepare("UPDATE articles SET title=?,slug=?,category=?,excerpt=?,body=?,thumb=?,meta_title=?,meta_desc=?,published=?,updated_at=NOW() WHERE id=?")
            ->execute([$title,$slug,$category,$excerpt,$body,$thumb,$meta_title,$meta_desc,$published,$id]);
         logActivity('Updated article', $title);
         $msg = 'Article updated.';
     } else {
-        $db->prepare("INSERT INTO articles (title,slug,category,excerpt,body,thumb,meta_title,meta_desc,published,author_id,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,datetime('now'),datetime('now'))")
+        $db->prepare("INSERT INTO articles (title,slug,category,excerpt,body,thumb,meta_title,meta_desc,published,author_id,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,NOW(),NOW())")
            ->execute([$title,$slug,$category,$excerpt,$body,$thumb,$meta_title,$meta_desc,$published,$user['id']]);
         $id = (int)$db->lastInsertId();
         logActivity('Created article', $title);

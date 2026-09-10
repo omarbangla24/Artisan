@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['save_member'])) {
            ->execute([$name,$role,$bio,$email,$linkedin,$photo,$order,$active,$id]);
         logActivity('Updated team member',$name); $msg='Member updated.';
     } else {
-        $db->prepare("INSERT INTO team_members (name,role,bio,email,linkedin,photo,sort_order,active,created_at) VALUES (?,?,?,?,?,?,?,?,datetime('now'))")
+        $db->prepare("INSERT INTO team_members (name,role,bio,email,linkedin,photo,sort_order,active,created_at) VALUES (?,?,?,?,?,?,?,?,NOW())")
            ->execute([$name,$role,$bio,$email,$linkedin,$photo,$order,$active]);
         logActivity('Created team member',$name); $msg='Member added.';
     }

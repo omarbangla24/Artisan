@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $stmt->fetch();
     if ($user && password_verify($pass, $user['password'])) {
         $_SESSION['admin_user'] = $user;
-        db()->prepare("UPDATE users SET last_login=datetime('now') WHERE id=?")->execute([$user['id']]);
+        db()->prepare("UPDATE users SET last_login=NOW() WHERE id=?")->execute([$user['id']]);
         db()->prepare("INSERT INTO activity_log (user_id,user_name,action,ip) VALUES (?,?,?,?)")
            ->execute([$user['id'],$user['name'],'Logged in',$_SERVER['REMOTE_ADDR']??'']);
         header('Location: /admin/'); exit;
