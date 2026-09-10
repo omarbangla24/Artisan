@@ -1,110 +1,90 @@
 <?php
 /**
- * Public form endpoint. Receives the site's enquiry forms, stores them for the
- * admin panel, and (optionally) emails a notification. No auth; protected by
- * honeypot + same-origin check + per-IP rate limiting.
+ * Form submission endpoint — handles all contact/quote forms.
+ * Saves to DB, sends SMTP notification email.
  */
-declare(strict_types=1);
+require_once __DIR__ . '/admin/inc/db.php';
+require_once __DIR__ . '/admin/inc/functions.php';
 
-header('Content-Type: application/json; charset=utf-8');
-header('X-Content-Type-Options: nosniff');
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 
-function reply(bool $ok, string $msg, int $code = 200, array $extra = []): never {
-    http_response_code($code);
-    echo json_encode(['ok' => $ok, 'message' => $msg] + $extra);
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode(['ok'=>false,'error'=>'Method not allowed']);
     exit;
 }
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') reply(false, 'Method not allowed.', 405);
+$data = [];
+$source = 'unknown';
 
-// ---- load backend (reuse admin core, no session) -------------------------
-// If the DB backend isn't configured yet, tell the client to fall back to email.
-$cfg = __DIR__ . '/admin/config.php';
-if (!is_file($cfg)) reply(false, 'Backend not configured yet.', 503, ['fallback' => true]);
-require $cfg;
-require __DIR__ . '/admin/inc/helpers.php';
-require __DIR__ . '/admin/inc/db.php';
-require __DIR__ . '/admin/inc/mailer.php';
-
-// ---- same-origin check (compare host names only, ignoring port) ----------
-$host   = (string)(parse_url('http://' . ($_SERVER['HTTP_HOST'] ?? ''), PHP_URL_HOST) ?: '');
-$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-$ref    = $_SERVER['HTTP_REFERER'] ?? '';
-$srcHost = $origin !== '' ? parse_url($origin, PHP_URL_HOST)
-        : ($ref !== '' ? parse_url($ref, PHP_URL_HOST) : $host);
-if ($srcHost && $host !== '' && strcasecmp((string)$srcHost, $host) !== 0) {
-    reply(false, 'Bad origin.', 403);
+// Accept JSON or form-encoded
+$raw = file_get_contents('php://input');
+if ($raw && ($json = json_decode($raw, true))) {
+    $data   = $json;
+    $source = 'json';
+} else {
+    $data   = $_POST;
+    $source = 'form';
 }
 
-// ---- honeypot ------------------------------------------------------------
-if (!empty($_POST['website'])) reply(true, 'Thank you.'); // silently accept bots
+// Honeypot
+if (!empty($data['website'])) {
+    http_response_code(200);
+    echo json_encode(['ok'=>true]);
+    exit;
+}
+
+// Sanitize
+$clean = [];
+foreach ($data as $k => $v) {
+    if (is_string($v)) $clean[preg_replace('/[^a-z0-9_\-]/i','',$k)] = htmlspecialchars(trim($v), ENT_QUOTES, 'UTF-8');
+}
+
+$formType = $clean['form_key'] ?? $clean['form_type'] ?? 'contact';
+$ip       = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? '';
+
+// Save to database
+try {
+    $db = db();
+    $db->prepare("INSERT INTO form_entries (form_type, data, ip, created_at) VALUES (?, ?, ?, datetime('now'))")
+       ->execute([$formType, json_encode($clean), $ip]);
+} catch (\Throwable $e) {
+    error_log('DB error saving form: ' . $e->getMessage());
+}
+
+// Build email notification
+$notifyTo = setting('notify_email') ?: setting('smtp_from') ?: 'info@artisancabd.com';
+$siteName  = setting('seo_site_name') ?: 'ARTISAN Chartered Accountants';
+$name  = $clean['name'] ?? $clean['full_name'] ?? 'Unknown';
+$subject = "New $formType submission from $name";
+
+$rows = '';
+foreach ($clean as $k => $v) {
+    if ($k === 'form_key' || $k === 'website') continue;
+    $label = ucwords(str_replace(['_','-'],' ',$k));
+    $rows .= "<tr><td style='padding:6px 12px 6px 0;color:#6b7280;white-space:nowrap;vertical-align:top;font-size:14px'>$label</td><td style='padding:6px 0;font-size:14px'>".nl2br($v)."</td></tr>";
+}
+
+$emailBody = "
+<div style='font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;max-width:560px;margin:0 auto'>
+  <div style='background:#1B61A9;padding:20px 24px;border-radius:8px 8px 0 0'>
+    <h2 style='color:#fff;margin:0;font-size:18px'>$siteName</h2>
+    <p style='color:#93c5fd;margin:4px 0 0;font-size:13px'>New form submission</p>
+  </div>
+  <div style='background:#f8fafc;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px;padding:24px'>
+    <p style='margin:0 0 16px;font-size:14px;color:#374151'>A new <strong>$formType</strong> form was submitted on your website.</p>
+    <table style='border-collapse:collapse;width:100%'>$rows</table>
+    <hr style='border:none;border-top:1px solid #e2e8f0;margin:20px 0'>
+    <p style='font-size:12px;color:#9ca3af;margin:0'>Submitted from IP: $ip &middot; <a href='https://artisancabd.com/admin/entries.php' style='color:#1B61A9'>View in Admin</a></p>
+  </div>
+</div>
+";
 
 try {
-    db(); db_migrate();
-} catch (Throwable $e) {
-    error_log('submit db: ' . $e->getMessage());
-    reply(false, 'Temporarily unavailable.', 503, ['fallback' => true]);
+    sendMail($notifyTo, $subject, $emailBody);
+} catch (\Throwable $e) {
+    error_log('Mail error: ' . $e->getMessage());
 }
 
-// ---- rate limit: max 8 per IP per hour -----------------------------------
-$ip = client_ip();
-$rl = db()->prepare("SELECT COUNT(*) FROM submissions WHERE ip = ? AND created_at >= ?");
-$rl->execute([$ip, date('Y-m-d H:i:s', time() - 3600)]);
-if ((int)$rl->fetchColumn() >= 8) reply(false, 'Too many submissions. Please try again later.', 429);
-
-// ---- form identity -------------------------------------------------------
-$allowed = ['contact','consultation','newsletter'];
-$form = preg_replace('/[^a-z_]/', '', strtolower((string)($_POST['form_key'] ?? '')));
-if (!in_array($form, $allowed, true)) $form = 'contact';
-$subject = post_str('subject', 200) ?: 'Website enquiry';
-
-// ---- gather fields (skip control + sensitive keys) -----------------------
-$skip = ['_csrf','website','form_key','subject','password'];
-$fields = [];
-foreach ($_POST as $k => $v) {
-    if (in_array($k, $skip, true) || !is_string($v)) continue;
-    $key = preg_replace('/[^a-z0-9_\-]/i', '', $k);
-    if ($key === '') continue;
-    $val = trim($v);
-    if (function_exists('mb_substr')) $val = mb_substr($val, 0, 5000);
-    if ($val !== '') $fields[$key] = $val;
-    if (count($fields) >= 40) break;
-}
-
-$name  = $fields['name']  ?? ($fields['contact_name'] ?? '');
-$email = clean_email($fields['email'] ?? '');
-$phone = $fields['phone'] ?? ($fields['contact_number'] ?? '');
-
-if ($email === '') reply(false, 'A valid email address is required.', 422);
-if ($form !== 'newsletter' && $name === '') reply(false, 'Your name is required.', 422);
-
-// ---- store ---------------------------------------------------------------
-$ins = db()->prepare(
-    'INSERT INTO submissions (form_key, subject, name, email, phone, payload, ip, user_agent, status)
-     VALUES (?,?,?,?,?,?,?,?,?)'
-);
-$ins->execute([
-    $form, $subject,
-    mb_substr($name, 0, 190), $email, mb_substr($phone, 0, 60),
-    json_encode($fields, JSON_UNESCAPED_UNICODE),
-    $ip, mb_substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 255),
-    'new',
-]);
-
-// ---- notify (best-effort; never blocks the user) -------------------------
-if (setting('notify_enabled') === '1' && setting('smtp_enabled') === '1') {
-    $to = setting('notify_to') ?: setting('smtp_from_email');
-    $rows = '';
-    foreach ($fields as $k => $v) {
-        $rows .= '<tr><td style="padding:4px 10px;color:#61728a">' . e(ucwords(str_replace(['_','-'],' ',$k)))
-               . '</td><td style="padding:4px 10px">' . nl2br(e($v)) . '</td></tr>';
-    }
-    $html = '<h2>New ' . e($form) . ' submission</h2>'
-          . '<p style="color:#61728a">' . e($subject) . '</p>'
-          . '<table style="border-collapse:collapse">' . $rows . '</table>'
-          . '<p style="color:#61728a;font-size:12px">IP: ' . e($ip) . '</p>';
-    [$ok, $err] = smtp_send($to, 'Admin', 'New enquiry: ' . $subject, $html);
-    if (!$ok) error_log('notify email failed: ' . $err);
-}
-
-reply(true, 'Thank you — your message has been received. We will get back to you shortly.');
+echo json_encode(['ok' => true, 'message' => 'Submitted successfully']);

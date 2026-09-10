@@ -1,38 +1,60 @@
 <?php
-require __DIR__ . '/inc/bootstrap.php';
-require __DIR__ . '/inc/layout.php';
+session_start();
+require_once __DIR__ . '/inc/db.php';
+require_once __DIR__ . '/inc/functions.php';
 
-if (current_user()) redirect('index.php');
+if (isset($_SESSION['admin_user'])) { header('Location: /admin/'); exit; }
 
-$err = '';
+$error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    csrf_check();
-    [$ok, $err] = auth_login(post_str('email', 190), post_str('password', 200));
-    if ($ok) redirect('index.php');
+    $email = trim($_POST['email'] ?? '');
+    $pass  = $_POST['password'] ?? '';
+    $stmt  = db()->prepare("SELECT * FROM users WHERE email=? AND active=1");
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
+    if ($user && password_verify($pass, $user['password'])) {
+        $_SESSION['admin_user'] = $user;
+        db()->prepare("UPDATE users SET last_login=datetime('now') WHERE id=?")->execute([$user['id']]);
+        db()->prepare("INSERT INTO activity_log (user_id,user_name,action,ip) VALUES (?,?,?,?)")
+           ->execute([$user['id'],$user['name'],'Logged in',$_SERVER['REMOTE_ADDR']??'']);
+        header('Location: /admin/'); exit;
+    }
+    $error = 'Invalid email or password.';
 }
-
-layout_header('Sign in');
-?>
-<div class="authwrap">
-  <div class="brand">ARTISAN <span>Admin</span></div>
-  <div class="card">
-    <?php if (isset($_GET['timeout'])): ?>
-      <div class="flash flash-warn">You were signed out after inactivity.</div>
-    <?php endif; ?>
-    <?php if ($err): ?><div class="flash flash-error"><?= e($err) ?></div><?php endif; ?>
-    <form method="post" autocomplete="off">
-      <?= csrf_field() ?>
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required autofocus
-               value="<?= e($_POST['email'] ?? '') ?>">
-      </div>
-      <div class="field">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button class="btn" style="width:100%" type="submit">Sign in</button>
-    </form>
-  </div>
+?><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Login — ARTISAN</title>
+<link rel="icon" href="/assets/img/logo.png">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.box{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:36px 40px;width:100%;max-width:380px}
+.logo{text-align:center;margin-bottom:28px}
+.logo img{height:36px;filter:brightness(0) invert(1);opacity:.9}
+h1{text-align:center;font-size:18px;font-weight:600;margin-bottom:8px}
+p{text-align:center;color:#94a3b8;font-size:13px;margin-bottom:24px}
+label{display:block;font-size:12px;color:#94a3b8;margin-bottom:5px;font-weight:500}
+input{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:9px 12px;font-size:14px;outline:none;transition:.2s;margin-bottom:14px}
+input:focus{border-color:#1B61A9}
+button{width:100%;background:#1B61A9;color:#fff;border:none;border-radius:8px;padding:10px;font-size:14px;font-weight:600;cursor:pointer;margin-top:4px}
+button:hover{background:#2d7dd2}
+.err{background:#2d0000;color:#fca5a5;border:1px solid #7f1d1d;border-radius:8px;padding:10px 12px;font-size:13px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="logo"><img src="/assets/img/logo.png" alt="ARTISAN"></div>
+  <h1>Admin Panel</h1>
+  <p>Sign in to manage your website</p>
+  <?php if($error): ?><div class="err"><?= htmlspecialchars($error) ?></div><?php endif; ?>
+  <form method="post">
+    <label>Email Address</label>
+    <input type="email" name="email" required autofocus placeholder="admin@artisancabd.com">
+    <label>Password</label>
+    <input type="password" name="password" required placeholder="••••••••">
+    <button type="submit">Sign In</button>
+  </form>
 </div>
-<?php layout_footer();
+</body></html>
