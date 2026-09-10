@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "artisan-static",
+      "name": "artisan-php",
       "runtimeExecutable": "php",
-      "runtimeArgs": ["-S", "127.0.0.1:4599", "-t", "."],
-      "port": 4599
+      "runtimeArgs": ["-S", "127.0.0.1:8787", "-t", "."],
+      "port": 8787
     }
   ]
 }

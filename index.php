@@ -57,11 +57,11 @@
           </svg>
         </div>
         <div class="header-utility">
-          <button type="button" data-modal-open>Get an Offer</button>
+          <a href="career" data-nav="career">Career</a>
           <span class="util-sep" aria-hidden="true"></span>
-          <button type="button" data-modal-open="subscribe">Subscribe</button>
-          <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
+          <button type="button" data-modal-open>Get an Offer</button>
         </div>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
@@ -172,7 +172,7 @@
   </div>
   <div class="container hero-inner">
     <div class="hero-center">
-      <span class="hero-kicker"><i></i> Chartered Accountants in Dhaka</span>
+      <span class="hero-kicker"><i></i> Chartered Accountants in Bangladesh</span>
       <h1 data-hero-title>Need <em>Assistance?</em></h1>
       <p data-hero-copy>Comprehensive range of business services in the areas of Audit and Assurance, Taxation and Business Advisory and Consultancy Services.</p>
       <div class="hero-actions">
@@ -241,7 +241,7 @@
 <!-- ============ MERGED FIRMS ============ -->
 <section class="section section-sand">
   <div class="container">
-    <div class="split" style="align-items:center">
+    <div class="split" style="align-items:end">
       <div class="split-6 reveal">
         <span class="chip">Merged C.A. Firms</span>
         <h2>Four Firms merged  to One firm.</h2>
@@ -255,7 +255,7 @@
       </div>
       <div class="split-6 reveal" data-delay="90">
         <div class="tile-media fill" style="border-radius:var(--r-lg);overflow:hidden;height:100%">
-          <img src="assets/img/single-servce2.jpg" alt="ARTISAN partners reviewing financial statements" loading="lazy" style="aspect-ratio:16/11">
+          <img src="assets/img/merged-firms.jpg" alt="A handshake marking the merger of four firms into ARTISAN" loading="lazy" style="aspect-ratio:16/11">
         </div>
       </div>
     </div>

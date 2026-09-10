@@ -91,11 +91,11 @@
           </svg>
         </div>
         <div class="header-utility">
-          <button type="button" data-modal-open>Get an Offer</button>
+          <a href="career" data-nav="career">Career</a>
           <span class="util-sep" aria-hidden="true"></span>
-          <button type="button" data-modal-open="subscribe">Subscribe</button>
-          <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
+          <button type="button" data-modal-open>Get an Offer</button>
         </div>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
       </div>
       <div class="header-bottom">
         <nav class="main-nav" aria-label="Main navigation">
