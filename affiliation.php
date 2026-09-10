@@ -341,7 +341,8 @@
         <div class="field"><label for="q-phone">Contact Number <span class="req">*</span></label><input type="tel" id="q-phone" name="contact_number" required></div>
         <div class="field"><label for="q-company">Company Name</label><input type="text" id="q-company" name="company"></div>
         <div class="field"><label for="q-email">Email Address <span class="req">*</span></label><input type="email" id="q-email" name="email" required></div>
-        <div class="field is-full"><label for="q-address">Full Address</label><textarea id="q-address" name="address" rows="2"></textarea></div>
+        <div class="field is-full"><label for="q-address">Full Address</label><input type="text" id="q-address" name="address"></div>
+        <div class="field is-full"><label for="q-description">Description</label><textarea id="q-description" name="description" rows="4" placeholder="Briefly describe your requirement…"></textarea></div>
       </div>
       <p class="form-note">Submitting this form does not create a professional or client relationship. Services commence only after a formal engagement letter.</p>
       <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px">Submit Request</button>
