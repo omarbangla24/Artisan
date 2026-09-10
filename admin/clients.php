@@ -54,7 +54,15 @@ include __DIR__ . '/inc/header.php';
     <tbody>
     <?php foreach($clients as $c): ?>
       <tr>
-        <td><img src="<?= $c['logo']?'/admin/uploads/clients/'.e($c['logo']):'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30"><rect fill="%23334155" width="50" height="30" rx="3"/></svg>' ?>" style="height:30px;max-width:80px;object-fit:contain"></td>
+        <td>
+          <?php if($c['logo']): ?>
+            <img src="/admin/uploads/clients/<?= e($c['logo']) ?>" style="height:30px;max-width:80px;object-fit:contain">
+          <?php else: ?>
+            <div style="width:52px;height:30px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted-l)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          <?php endif; ?>
+        </td>
         <td><?= e($c['name']) ?></td>
         <td style="color:var(--muted);font-size:12px"><?= e($c['sector']) ?></td>
         <td style="color:var(--muted)"><?= $c['sort_order'] ?></td>

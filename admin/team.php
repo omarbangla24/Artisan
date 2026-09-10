@@ -2,7 +2,7 @@
 require_once __DIR__ . '/inc/auth.php';
 require_once __DIR__ . '/inc/functions.php';
 requireAuth();
-$pageTitle = 'Team Members';
+$pageTitle = 'Partners';
 $db = db();
 $msg = '';
 
@@ -51,7 +51,7 @@ include __DIR__ . '/inc/header.php';
 <?php if(isset($_GET['msg'])): ?><div class="alert alert-success">Member deleted.</div><?php endif; ?>
 <div style="display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start">
 <div class="card">
-  <div class="card-header"><h2>Team Members (<?= count($members) ?>)</h2></div>
+  <div class="card-header"><h2>Partners (<?= count($members) ?>)</h2></div>
   <div class="table-wrap">
   <?php if(empty($members)): ?><div class="empty"><p>No team members yet.</p></div>
   <?php else: ?>

@@ -2,7 +2,7 @@
 require_once __DIR__ . '/inc/auth.php';
 require_once __DIR__ . '/inc/functions.php';
 requireAuth();
-$pageTitle = 'Partners / Affiliations';
+$pageTitle = 'Affiliations';
 $db = db();
 $msg = '';
 
@@ -45,7 +45,7 @@ include __DIR__ . '/inc/header.php';
 <?php if(isset($_GET['msg'])): ?><div class="alert alert-success">Partner deleted.</div><?php endif; ?>
 <div style="display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start">
 <div class="card">
-  <div class="card-header"><h2>Partners & Affiliations (<?= count($partners) ?>)</h2></div>
+  <div class="card-header"><h2>Affiliations & Enlistments (<?= count($partners) ?>)</h2></div>
   <div class="table-wrap">
   <?php if(empty($partners)): ?><div class="empty"><p>No partners yet.</p></div>
   <?php else: ?>
@@ -54,7 +54,15 @@ include __DIR__ . '/inc/header.php';
     <tbody>
     <?php foreach($partners as $p): ?>
       <tr>
-        <td><img src="<?= $p['logo']?'/admin/uploads/partners/'.e($p['logo']):'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30"><rect fill="%23334155" width="40" height="30" rx="3"/></svg>' ?>" style="height:30px;max-width:70px;object-fit:contain"></td>
+        <td>
+          <?php if($p['logo']): ?>
+            <img src="/admin/uploads/partners/<?= e($p['logo']) ?>" style="height:30px;max-width:70px;object-fit:contain">
+          <?php else: ?>
+            <div style="width:48px;height:30px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted-l)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          <?php endif; ?>
+        </td>
         <td><?= e($p['name']) ?></td>
         <td style="color:var(--muted);font-size:12px"><?= e($p['category']) ?></td>
         <td style="color:var(--muted)"><?= $p['sort_order'] ?></td>
@@ -73,12 +81,12 @@ include __DIR__ . '/inc/header.php';
   </div>
 </div>
 <div class="card">
-  <div class="card-header"><h2><?= $edit?'Edit Partner':'Add Partner' ?></h2></div>
+  <div class="card-header"><h2><?= $edit?'Edit Affiliation':'Add Affiliation' ?></h2></div>
   <div class="card-body">
     <form method="post" enctype="multipart/form-data">
       <input type="hidden" name="save_partner" value="1">
       <input type="hidden" name="partner_id" value="<?= $edit['id']??0 ?>">
-      <div class="field"><label>Organization Name</label><input type="text" name="name" required value="<?= e($edit['name']??'') ?>"></div>
+      <div class="field"><label>Body / Organization Name</label><input type="text" name="name" required value="<?= e($edit['name']??'') ?>"></div>
       <div class="field"><label>Category</label><input type="text" name="category" value="<?= e($edit['category']??'') ?>" placeholder="Affiliation, Enlistment, Partner…"></div>
       <div class="field"><label>Logo</label>
         <?php if(!empty($edit['logo'])): ?><img src="/admin/uploads/partners/<?= e($edit['logo']) ?>" style="height:40px;object-fit:contain;margin-bottom:8px;display:block"><?php endif; ?>
