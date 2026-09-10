@@ -617,13 +617,13 @@
         <div class="footer-lines footer-connect-line">
           <a href="mailto:info@artisancabd.com">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></svg></span>
-            <span>info.com</span>
+            <span>info@artisancabd.com</span>
           </a>
         </div>
-        <div class="social">
-          <a href="https://www.linkedin.com/company/artisan-ca/" target="_blank" rel="noopener" class="linkedin-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg>
-            <span>linkedin.com/company/artisan-ca</span>
+        <div class="footer-lines footer-connect-line" style="margin-top:0">
+          <a href="https://www.linkedin.com/company/artisan-ca/" target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05a4.2 4.2 0 0 1 3.77-2.07c4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"></path></svg></span>
+            <span>artisan-ca</span>
           </a>
         </div>
       </div>

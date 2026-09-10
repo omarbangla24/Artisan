@@ -1098,9 +1098,6 @@ strong,b{font-weight:600;color:var(--ink)}
 .social a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;transition:.28s}
 .social a:hover{background:var(--brand)}
 .social svg{width:17px;height:17px;color:#fff}
-.social a.linkedin-link{width:auto;height:auto;border-radius:0;background:none;gap:10px;padding:0;color:#DCE5EC;font-size:.88rem}
-.social a.linkedin-link:hover{background:none;color:var(--brand-300)}
-.social a.linkedin-link svg{width:18px;height:18px;flex:none}
 .footer-connect p{max-width:30ch;margin-bottom:18px}
 .footer-connect-line{margin:0 0 20px}.footer-connect-line a{font-size:.9rem}
 .management-placeholder{min-height:58vh;display:grid;place-items:center;background:linear-gradient(135deg,#eef5fa,#fff)}
